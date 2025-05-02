@@ -1,0 +1,2057 @@
+monitor:DEVPATH=/devices/platform/ehci-platform.1/usb2/2-1/2-1:1.0
+monitor:SUBSYSTEM=usb
+monitor:DEVTYPE=usb_interface
+monitor:DEVICE=/proc/bus/usb/002/006
+monitor:PRODUCT=781/5583/100
+monitor:TYPE=0/0/0
+monitor:INTERFACE=8/6/80
+monitor:MODALIAS=usb:v0781p5583d0100dc00dsc00dp00ic08isc06ip50
+monitor:SEQNUM=766
+monitor:event { 'add', '781/5583/100' }
+monitor:add@/devices/platform/ehci-platform.1/usb2/2-1/2-1:1.0/host4
+monitor:ACTION=add
+monitor:DEVPATH=/devices/platform/ehci-platform.1/usb2/2-1/2-1:1.0/host4
+monitor:SUBSYSTEM=scsi
+monitor:DEVTYPE=scsi_host
+monitor:SEQNUM=767
+monitor:event { 'add', '' }
+monitor:add@/devices/platform/ehci-platform.1/usb2/2-1/2-1:1.0/host4/scsi_host/host4
+monitor:ACTION=add
+monitor:DEVPATH=/devices/platform/ehci-platform.1/usb2/2-1/2-1:1.0/host4/scsi_host/host4
+monitor:SUBSYSTEM=scsi_host
+monitor:SEQNUM=768
+monitor:event { 'add', '' }
+[ 2071.380000] scsi 4:0:0:0: Direct-Access      USB      SanDisk 3.2Gen1 1.00 PQ: 0 ANSI: 6
+monitor:add@/devices/platform/ehci-platform.1/usb2/2-1/2-1:1.0/host4/target4:0:0
+monitor:ACTION=add
+monitor:DEVPATH=/devices/platform/ehci-platform.1/usb2/2-1/2-1:1.0/host4/target4:0:0
+monitor:SUBSYSTEM=scsi
+[ 2071.410000] sd 4:0:0:0: [sda] 60088320 512-byte logical blocks: (30.7 GB/28.6 GiB)
+
+monitor:SEQNUM=769
+monitor:event { 'add', '' }
+monitor:add@/devices/platform/ehci-platform.1/usb2/2-1/2-1:1.0/host4/target4:0:0/4:0:0:0
+moni[ 2071.430000] sd 4:0:0:0: [sda] Write Protect is off
+tor:ACTION=add
+monitor:DEVPATH=[ 2071.440000] sd 4:0:0:0: [sda] Write cache: disabled, read cache: enabled, doesn't support DPO or FUA
+/devices/platform/ehci-platform.1/usb2/2-1/2-1:1.0/host4/target4:0:0/4:0:0:0
+monitor:SUBSYSTEM=scsi
+monitor:DEVTYPE=scsi_device
+monitor:MODALIAS=scsi:t-0x00
+monitor:SEQNUM=770
+monitor:event { 'add', '' }[ 2071.470000]  sda: sda1
+
+monitor:add@/devices/platform/ehci-platform.1/usb2/2-1/2-1:1.0[ 2071.470000] sd 4:0:0:0: [sda] Attached SCSI removable disk
+/host4/target4:0:0/4:0:0:0/scsi_disk/4:0:0:0
+monitor:ACTION=add
+monitor:DEVPATH=/devices/platform/ehci-platform.1/usb2/2-1/2-1:1.0/host4/target4:0:0/4:0:0:0/scsi_disk/4:0:0:0
+monitor:SUBSYSTEM=scsi_disk
+monitor:SEQNUM=771
+monitor:event { 'add', '' }
+monitor:add@/devices/platform/ehci-platform.1/usb2/2-1/2-1:1.0/host4/target4:0:0/4:0:0:0/scsi_device/4:0:0:0
+monitor:ACTION=add
+monitor:DEVPATH=/devices/platform/ehci-platform.1/usb2/2-1/2-1:1.0/host4/target4:0:0/4:0:0:0/scsi_device/4:0:0:0
+monitor:SUBSYSTEM=scsi_device
+monitor:SEQNUM=772
+monitor:event { 'add', '' }
+monitor:add@/devices/virtual/bdi/8:0
+monitor:ACTION=add
+monitor:DEVPATH=/devices/virtual/bdi/8:0
+monitor:SUBSYSTEM=bdi
+monitor:SEQNUM=773
+monitor:event { 'add', '' }
+monitor:add@/devices/platform/ehci-platform.1/usb2/2-1/2-1:1.0/host4/target4:0:0/4:0:0:0/block/sda
+monitor:ACTION=add
+monitor:DEVPATH=/devices/platform/ehci-platform.1/usb2/2-1/2-1:1.0/host4/target4:0:0/4:0:0:0/block/sda
+monitor:SUBSYSTEM=block
+monitor:MAJOR=8
+monitor:MINOR=0
+monitor:DEVNAME=sda
+monitor:DEVTYPE=disk
+monitor:SEQNUM=774
+monitor:event { 'add', '' }
+monitor:add@/devices/platform/ehci-platform.1/usb2/2-1/2-1:1.0/host4/target4:0:0/4:0:0:0/block/sda/sda1
+monitor:ACTION=add
+monitor:DEVPATH=/devices/platform/ehci-platform.1/usb2/2-1/2-1:1.0/host4/target4:0:0/4:0:0:0/block/sda/sda1
+monitor:SUBSYSTEM=block
+monitor:MAJOR=8
+monitor:MINOR=1
+moni[ 2071.610000] yaffs: dev is 8388608 name is "sda" rw
+tor:DEVNAME=sda1[ 2071.610000] yaffs: passed flags ""
+
+monitor:DEVTYP[ 2071.620000] yaffs: dev is 8388608 name is "sda" rw
+E=partition
+mon[ 2071.620000] yaffs: passed flags ""
+itor:SEQNUM=775
+monitor:event { 'add', '' }
+mknod: /dev/sda: File exists
+mknod: /dev/sda1: File exists
+NTFS signature is missing.
+Failed to mount '/dev/sda': Invalid argument
+The device '/dev/sda' doesn't seem to have a valid NTFS.
+Maybe the wrong device is used? Or the whole disk instead of a
+partition (e.g. /dev/sda, not /dev/sda1)? Or the other way around?
+mount: mounting /dev/sda on /tmp/usb_disk failed: Invalid argument
+[ 2071.740000] USBtest: sending ioctl 540d to a partition!
+[ 2071.740000] USBtest: sending ioctl 540d to a partition!
+mkdir: can't create directory '/tmp/usb_disk': File exists
+/bin/sh: samba_mod_conf.sh: not found
+The disk contains an unclean file system (0, 0).
+The file system wasn't safely closed on Windows. Fixing.
+monitor:add@/devices/virtual/bdi/8:1-fuseblk
+monitor:ACTION=add
+monitor:DEVPATH=/devices/virtual/bdi/8:1-fuseblk
+monitor:SUBSYSTEM=bdi
+monitor:SEQNUM=776
+monitor:event { 'add', '' }
+
+cat: can't open '/dev/m': No such file or directory
+admin@(none):~# for i in 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17; do cat /de
+v/mtd$i > \
+>   /var/usb_disk/mtd$i; done
+[ 2109.090000] ath79_spinand_read_page ecc err status=0x2
+^C
+admin@(none):~# umount /var/usb_disk; sync
+monitor:remove@/devices/virtual/bdi/8:1-fuseblk
+monitor:ACTION=remove
+monitor:DEVPATH=/devices/virtual/bdi/8:1-fuseblk
+monitor:SUBSYSTEM=bdi
+monitor:SEQNUM=777
+monitor:event { 'remove', '' }
+admin@(none):~# [ 2318.300000] usb 2-1: USB disconnect, device number 6
+monitor:remove@/devices/platform/ehci-platform.1/usb2/2-1/2-1:1.0/host4/target4:0:0/4:0:0:0/scsi_device/4:0:0:0
+monitor:ACTION=remove
+monitor:DEVPATH=/devices/platform/ehci-platform.1/usb2/2-1/2-1:1.0/host4/target4:0:0/4:0:0:0/scsi_device/4:0:0:0
+monitor:SUBSYSTEM=scsi_device
+monitor:SEQNUM=778
+monitor:event { 'remove', '' }
+monitor:remove@/devices/platform/ehci-platform.1/usb2/2-1/2-1:1.0/host4/target4:0:0/4:0:0:0/scsi_disk/4:0:0:0
+monitor:ACTION=remove
+monitor:DEVPATH=/devices/platform/ehci-platform.1/usb2/2-1/2-1:1.0/host4/target4:0:0/4:0:0:0/scsi_disk/4:0:0:0
+monitor:SUBSYSTEM=scsi_disk
+monitor:SEQNUM=779
+monitor:event { 'remove', '' }
+monitor:remove@/devices/platform/ehci-platform.1/usb2/2-1/2-1:1.0/host4/target4:0:0/4:0:0:0/block/sda/sda1
+monitor:ACTION=remove
+monitor:DEVPATH=/devices/platform/ehci-platform.1/usb2/2-1/2-1:1.0/host4/target4:0:0/4:0:0:0/block/sda/sda1
+monitor:SUBSYSTEM=block
+monitor:MAJOR=8
+monitor:MINOR=1
+monitor:DEVNAME=sda1
+monitor:DEVTYPE=partition
+monitor:SEQNUM=780
+monitor:event { 'remove', '' }
+monitor:remove@/devices/virtual/bdi/8:0
+monitor:ACTION=remove
+monitor:DEVPATH=/devices/virtual/bdi/8:0
+monitor:SUBSYSTEM=bdi
+monitor:SEQNUM=781
+monitor:event { 'remove', '' }
+monitor:remove@/devices/platform/ehci-platform.1/usb2/2-1/2-1:1.0/host4/target4:0:0/4:0:0:0/block/sda
+monitor:ACTION=remove
+monitor:DEVPATH=/devices/platform/ehci-platform.1/usb2/2-1/2-1:1.0/host4/target4:0:0/4:0:0:0/block/sda
+monitor:SUBSYSTEM=block
+monitor:MAJOR=8
+monitor:MINOR=0
+monitor:DEVNAME=sda
+monitor:DEVTYPE=disk
+monitor:SEQNUM=782
+monitor:event { 'remove', '' }
+monitor:remove@/devices/platform/ehci-platform.1/usb2/2-1/2-1:1.0/host4/target4:0:0/4:0:0:0
+monitor:ACTION=remove
+monitor:DEVPATH=/devices/platform/ehci-platform.1/usb2/2-1/2-1:1.0/host4/target4:0:0/4:0:0:0
+monitor:SUBSYSTEM=scsi
+monitor:DEVTYPE=scsi_device
+monitor:MODALIAS=scsi:t-0x00
+monitor:SEQNUM=783
+monitor:event { 'remove', '' }
+monitor:remove@/devices/platform/ehci-platform.1/usb2/2-1/2-1:1.0/host4/target4:0:0
+monitor:ACTION=remove
+monitor:DEVPATH=/devices/platform/ehci-platform.1/usb2/2-1/2-1:1.0/host4/target4:0:0
+monitor:SUBSYSTEM=scsi
+monitor:DEVTYPE=scsi_target
+monitor:SEQNUM=784
+monitor:event { 'remove', '' }
+monitor:remove@/devices/platform/ehci-platform.1/usb2/2-1/2-1:1.0/host4/scsi_host/host4
+monitor:ACTION=remove
+monitor:DEVPATH=/devices/platform/ehci-platform.1/usb2/2-1/2-1:1.0/host4/scsi_host/host4
+monitor:SUBSYSTEM=scsi_host
+monitor:SEQNUM=785
+monitor:event { 'remove', '' }
+monitor:remove@/devices/platform/ehci-platform.1/usb2/2-1/2-1:1.0/host4
+monitor:ACTION=remove
+monitor:DEVPATH=/devices/platform/ehci-platform.1/usb2/2-1/2-1:1.0/host4
+monitor:SUBSYSTEM=scsi
+monitor:DEVTYPE=scsi_host
+monitor:SEQNUM=786
+monitor:event { 'remove', '' }
+monitor:remove@/devices/platform/ehci-platform.1/usb2/2-1/2-1:1.0
+monitor:ACTION=remove
+monitor:DEVPATH=/devices/platform/ehci-platform.1/usb2/2-1/2-1:1.0
+monitor:SUBSYSTEM=usb
+monitor:DEVTYPE=usb_interface
+monitor:DEVICE=/proc/bus/usb/002/006
+monitor:PRODUCT=781/5583/100
+monitor:TYPE=0/0/0
+monitor:INTERFACE=8/6/80
+monitor:MODALIAS=usb:v0781p5583d0100dc00dsc00dp00ic08isc06ip50
+monitor:SEQNUM=787
+monitor:event { 'remove', '781/5583/100' }
+monitor:remove@/devices/platform/ehci-platform.1/usb2/2-1
+monitor:ACTION=remove
+monitor:DEVPATH=/devices/platform/ehci-platform.1/usb2/2-1
+monitor:SUBSYSTEM=usb
+monitor:MAJOR=189
+monitor:MINOR=133
+monitor:DEVNAME=bus/usb/002/006
+monitor:DEVTYPE=usb_device
+monitor:DEVICE=/proc/bus/usb/002/006
+monitor:PRODUCT=781/5583/100
+monitor:TYPE=0/0/0
+monitor:BUSNUM=002
+monitor:DEVNUM=006
+monitor:SEQNUM=788
+monitor:event { 'remove', '781/5583/100' }
+[ 2377.850000] usb 2-1: new high-speed USB device number 7 using ehci-platform
+monitor:add@/devices/platform/ehci-platform.1/usb2/2-1
+monitor:ACTION=add
+monitor:DEVPATH=/dev[ 2378.010000] scsi5 : usb-storage 2-1:1.0
+ices/platform/ehci-platform.1/usb2/2-1
+monitor:SUBSYSTEM=usb
+monitor:MAJOR=189
+monitor:MINOR=134
+monitor:DEVNAME=bus/usb/002/007
+monitor:DEVTYPE=usb_device
+monitor:DEVICE=/proc/bus/usb/002/007
+monitor:PRODUCT=781/5583/100
+monitor:TYPE=0/0/0
+monitor:BUSNUM=002
+monitor:DEVNUM=007
+monitor:SEQNUM=789
+monitor:event { 'add', '781/5583/100' }
+monitor:add@/devices/platform/ehci-platform.1/usb2/2-1/2-1:1.0
+monitor:ACTION=add
+monitor:DEVPATH=/devices/platform/ehci-platform.1/usb2/2-1/2-1:1.0
+monitor:SUBSYSTEM=usb
+monitor:DEVTYPE=usb_interface
+monitor:DEVICE=/proc/bus/usb/002/007
+monitor:PRODUCT=781/5583/100
+monitor:TYPE=0/0/0
+monitor:INTERFACE=8/6/80
+monitor:MODALIAS=usb:v0781p5583d0100dc00dsc00dp00ic08isc06ip50
+monitor:SEQNUM=790
+monitor:event { 'add', '781/5583/100' }
+monitor:add@/devices/platform/ehci-platform.1/usb2/2-1/2-1:1.0/host5
+monitor:ACTION=add
+monitor:DEVPATH=/devices/platform/ehci-platform.1/usb2/2-1/2-1:1.0/host5
+monitor:SUBSYSTEM=scsi
+monitor:DEVTYPE=scsi_host
+monitor:SEQNUM=791
+monitor:event { 'add', '' }
+monitor:add@/devices/platform/ehci-platform.1/usb2/2-1/2-1:1.0/host5/scsi_host/host5
+monitor:ACTION=add
+monitor:DEVPATH=/devices/platform/ehci-platform.1/usb2/2-1/2-1:1.0/host5/scsi_host/host5
+monitor:SUBSYSTEM=scsi_host
+monitor:SEQNUM=792
+monitor:event { 'add', '' }
+[ 2379.010000] scsi 5:0:0:0: Direct-Access      USB      SanDisk 3.2Gen1 1.00 PQ: 0 ANSI: 6
+monitor:add@/devices/platform/ehci-platform.1/us[ 2379.020000] sd 5:0:0:0: [sda] 60088320 512-byte logical blocks: (30.7 GB/28.6 GiB)
+b2/2-1/2-1:1.0/host5/target5:0:0
+monitor:ACTION=add
+monitor:DEVPATH=/devices/platform/ehci-platform.1/usb2/2-1/2-1:1.0/host5/target5:0:0
+moni[ 2379.040000] sd 5:0:0:0: [sda] Write Protect is off
+tor:SUBSYSTEM=scsi
+monitor:DEVT[ 2379.050000] sd 5:0:0:0: [sda] Write cache: disabled, read cache: enabled, doesn't support DPO or FUA
+YPE=scsi_target
+monitor:SEQNUM=793
+monitor:event { 'add', '' }
+monitor:add@/devices/platform/ehci-platform.1/usb2/2-1/2-1:1.0/host5/target5:0:0/5:0:0:0
+monitor:ACTION=add
+monitor:DEVPATH=/devices/platfor[ 2379.080000]  sda: sda1
+m/ehci-platform.1/usb2/2-1/2-1:1.0/host5/target5:0:0/5:0:0:0
+mo[ 2379.080000] sd 5:0:0:0: [sda] Attached SCSI removable disk
+nitor:SUBSYSTEM=scsi
+monitor:DEVTYPE=scsi_device
+monitor:MODALIAS=scsi:t-0x00
+monitor:SEQNUM=794
+monitor:event { 'add', '' }
+monitor:add@/devices/platform/ehci-platform.1/usb2/2-1/2-1:1.0/host5/target5:0:0/5:0:0:0/scsi_disk/5:0:0:0
+monitor:ACTION=add
+monitor:DEVPATH=/devices/platform/ehci-platform.1/usb2/2-1/2-1:1.0/host5/target5:0:0/5:0:0:0/scsi_disk/5:0:0:0
+monitor:SUBSYSTEM=scsi_disk
+monitor:SEQNUM=795
+monitor:event { 'add', '' }
+monitor:add@/devices/platform/ehci-platform.1/usb2/2-1/2-1:1.0/host5/target5:0:0/5:0:0:0/scsi_device/5:0:0:0
+monitor:ACTION=add
+monitor:DEVPATH=/devices/platform/ehci-platform.1/usb2/2-1/2-1:1.0/host5/target5:0:0/5:0:0:0/scsi_device/5:0:0:0
+monitor:SUBSYSTEM=scsi_device
+monitor:SEQNUM=796
+monitor:event { 'add', '' }
+monitor:add@/devices/virtual/bdi/8:0
+monitor:ACTION=add
+monitor:DEVPATH=/devices/virtual/bdi/8:0
+monitor:SUBSYSTEM=bdi
+monitor:SEQNUM=797
+monitor:event { 'add', '' }
+monitor:add@/devices/platform/ehci-platform.1/usb2/2-1/2-1:1.0/host5/target5:0:0/5:0:0:0/block/sda
+monitor:ACTION=add
+monitor:DEVPATH=/devices/platform/ehci-platform.1/usb2/2-1/2-1:1.0/host5/target5:0:0/5:0:0:0/block/sda
+monitor:SUBSYSTEM=block
+monitor:MAJOR=8
+monitor:MINOR=0
+monitor:DEVNAME=sda
+monitor:DEVTYPE=disk
+monitor:SEQNUM=798
+monitor:event { 'add', '' }
+monitor:add@/devices/platform/ehci-platform.1/usb2/2-1/2-1:1.0/host5/target5:0:0/5:0:0:0/block/sda/sda1
+monitor:ACTION=add
+monitor:DEVPATH=/devices/platform/ehci-platform.1/usb2/2-1/2-1:1.0/host5/target5:0:0/5:0:0:0/block/sda/sda1
+monitor:SUBSYSTEM=block
+monitor:MAJOR=8
+monitor:MINOR=1
+monitor:DEVNAME=sda1
+monitor:DEVTYPE=partition
+monitor:SEQNUM=799
+monitor:event { 'add', '' }
+mknod: /dev/sda: File exists
+mknod: /dev/sda1: File exists
+mkdir: can't create directory '/tmp/usb_disk': File exists
+NTFS signature is missing.
+Failed to mount '/dev/sda': Invalid argument
+The device '/dev/sda' doesn't seem to have a valid NTFS.
+Maybe the wrong device is used? Or the whole[ 2379.540000] yaffs: dev is 8388608 name is "sda" rw
+ disk instead of[ 2379.540000] yaffs: passed flags ""
+ a
+partition (e[ 2379.550000] yaffs: dev is 8388608 name is "sda" rw
+.g. /dev/sda, no[ 2379.550000] yaffs: passed flags ""
+t /dev/sda1)? Or the other way around?
+mount: mounting /dev/sda on /tmp/usb_disk failed: Invalid argument
+[ 2381.750000] USBtest: sending ioctl 540d to a partition!
+[ 2381.750000] USBtest: sending ioctl 540d to a partition!
+mkdir: can't create directory '/tmp/usb_disk': File exists
+/bin/sh: samba_mod_conf.sh: not found
+The disk contains an unclean file system (0, 1).
+The file system wasn't safely closed on Windows. Fixing.
+monitor:add@/devices/virtual/bdi/8:1-fuseblk
+monitor:ACTION=add
+monitor:DEVPATH=/devices/virtual/bdi/8:1-fuseblk
+monitor:SUBSYSTEM=bdi
+monitor:SEQNUM=800
+monitor:event { 'add', '' }
+
+admin@(none):~# for i in 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16; do cat /dev/m
+td$i > \
+>   /var/usb_disk/mtd$i; done
+[ 2423.010000] ath79_spinand_read_page ecc err status=0x2
+[ 2477.410000] [wifi1] FWLOG: [2542633] WAL_DBGID_SECURITY_ENCR_EN (  )
+[ 2477.420000] [wifi1] FWLOG: [2542633] WAL_DBGID_SECURITY_MCAST_KEY_SET ( 0x1 )
+
+admin@(none):~#
+admin@(none):~# umount /var/usb_disk; sync
+monitor:remove@/devices/virtual/bdi/8:1-fuseblk
+monitor:ACTION=remove
+monitor:DEVPATH=/devices/virtual/bdi/8:1-fuseblk
+monitor:SUBSYSTEM=bdi
+monitor:SEQNUM=801
+monitor:event { 'remove', '' }
+admin@(none):~# [ 2727.430000] usb 2-1: USB disconnect, device number 7
+monitor:remove@/devices/platform/ehci-platform.1/usb2/2-1/2-1:1.0/host5/target5:0:0/5:0:0:0/scsi_device/5:0:0:0
+monitor:ACTION=remove
+monitor:DEVPATH=/devices/platform/ehci-platform.1/usb2/2-1/2-1:1.0/host5/target5:0:0/5:0:0:0/scsi_device/5:0:0:0
+monitor:SUBSYSTEM=scsi_device
+monitor:SEQNUM=802
+monitor:event { 'remove', '' }
+monitor:remove@/devices/platform/ehci-platform.1/usb2/2-1/2-1:1.0/host5/target5:0:0/5:0:0:0/scsi_disk/5:0:0:0
+monitor:ACTION=remove
+monitor:DEVPATH=/devices/platform/ehci-platform.1/usb2/2-1/2-1:1.0/host5/target5:0:0/5:0:0:0/scsi_disk/5:0:0:0
+monitor:SUBSYSTEM=scsi_disk
+monitor:SEQNUM=803
+monitor:event { 'remove', '' }
+monitor:remove@/devices/platform/ehci-platform.1/usb2/2-1/2-1:1.0/host5/target5:0:0/5:0:0:0/block/sda/sda1
+monitor:ACTION=remove
+monitor:DEVPATH=/devices/platform/ehci-platform.1/usb2/2-1/2-1:1.0/host5/target5:0:0/5:0:0:0/block/sda/sda1
+monitor:SUBSYSTEM=block
+monitor:MAJOR=8
+monitor:MINOR=1
+monitor:DEVNAME=sda1
+monitor:DEVTYPE=partition
+monitor:SEQNUM=804
+monitor:event { 'remove', '' }
+monitor:remove@/devices/virtual/bdi/8:0
+monitor:ACTION=remove
+monitor:DEVPATH=/devices/virtual/bdi/8:0
+monitor:SUBSYSTEM=bdi
+monitor:SEQNUM=805
+monitor:event { 'remove', '' }
+monitor:remove@/devices/platform/ehci-platform.1/usb2/2-1/2-1:1.0/host5/target5:0:0/5:0:0:0/block/sda
+monitor:ACTION=remove
+monitor:DEVPATH=/devices/platform/ehci-platform.1/usb2/2-1/2-1:1.0/host5/target5:0:0/5:0:0:0/block/sda
+monitor:SUBSYSTEM=block
+monitor:MAJOR=8
+monitor:MINOR=0
+monitor:DEVNAME=sda
+monitor:DEVTYPE=disk
+monitor:SEQNUM=806
+monitor:event { 'remove', '' }
+monitor:remove@/devices/platform/ehci-platform.1/usb2/2-1/2-1:1.0/host5/target5:0:0/5:0:0:0
+monitor:ACTION=remove
+monitor:DEVPATH=/devices/platform/ehci-platform.1/usb2/2-1/2-1:1.0/host5/target5:0:0/5:0:0:0
+monitor:SUBSYSTEM=scsi
+monitor:DEVTYPE=scsi_device
+monitor:MODALIAS=scsi:t-0x00
+monitor:SEQNUM=807
+monitor:event { 'remove', '' }
+monitor:remove@/devices/platform/ehci-platform.1/usb2/2-1/2-1:1.0/host5/target5:0:0
+monitor:ACTION=remove
+monitor:DEVPATH=/devices/platform/ehci-platform.1/usb2/2-1/2-1:1.0/host5/target5:0:0
+monitor:SUBSYSTEM=scsi
+monitor:DEVTYPE=scsi_target
+monitor:SEQNUM=808
+monitor:event { 'remove', '' }
+monitor:remove@/devices/platform/ehci-platform.1/usb2/2-1/2-1:1.0/host5/scsi_host/host5
+monitor:ACTION=remove
+monitor:DEVPATH=/devices/platform/ehci-platform.1/usb2/2-1/2-1:1.0/host5/scsi_host/host5
+monitor:SUBSYSTEM=scsi_host
+monitor:SEQNUM=809
+monitor:event { 'remove', '' }
+monitor:remove@/devices/platform/ehci-platform.1/usb2/2-1/2-1:1.0/host5
+monitor:ACTION=remove
+monitor:DEVPATH=/devices/platform/ehci-platform.1/usb2/2-1/2-1:1.0/host5
+monitor:SUBSYSTEM=scsi
+monitor:DEVTYPE=scsi_host
+monitor:SEQNUM=810
+monitor:event { 'remove', '' }
+monitor:remove@/devices/platform/ehci-platform.1/usb2/2-1/2-1:1.0
+monitor:ACTION=remove
+monitor:DEVPATH=/devices/platform/ehci-platform.1/usb2/2-1/2-1:1.0
+monitor:SUBSYSTEM=usb
+monitor:DEVTYPE=usb_interface
+monitor:DEVICE=/proc/bus/usb/002/007
+monitor:PRODUCT=781/5583/100
+monitor:TYPE=0/0/0
+monitor:INTERFACE=8/6/80
+monitor:MODALIAS=usb:v0781p5583d0100dc00dsc00dp00ic08isc06ip50
+monitor:SEQNUM=811
+monitor:event { 'remove', '781/5583/100' }
+monitor:remove@/devices/platform/ehci-platform.1/usb2/2-1
+monitor:ACTION=remove
+monitor:DEVPATH=/devices/platform/ehci-platform.1/usb2/2-1
+monitor:SUBSYSTEM=usb
+monitor:MAJOR=189
+monitor:MINOR=134
+monitor:DEVNAME=bus/usb/002/007
+monitor:DEVTYPE=usb_device
+monitor:DEVICE=/proc/bus/usb/002/007
+monitor:PRODUCT=781/5583/100
+monitor:TYPE=0/0/0
+monitor:BUSNUM=002
+monitor:DEVNUM=007
+monitor:SEQNUM=812
+monitor:event { 'remove', '781/5583/100' }
+▒
+
+U-Boot 1.1.4 (May 13 2021 - 05:37:00)
+
+ap152 - Dragonfly 1.0DRAM:
+sri
+ath_ddr_initial_config(278): (ddr2 init)
+ath_sys_frequency: cpu 775 ddr 650 ahb 258
+Tap values = (0xf, 0xf, 0xf, 0xf)
+128 MB
+Top of RAM usable for U-Boot at: 88000000
+Reserving 659k for U-Boot at: 87f58000
+Reserving 192k for malloc() at: 87f28000
+Reserving 44 Bytes for Board Info at: 87f27fd4
+Reserving 36 Bytes for Global Data at: 87f27fb0
+Reserving 128k for boot params() at: 87f07fb0
+Stack Pointer at: 87f07f98
+Now running in RAM - U-Boot at: 87f58000
+Flash Manuf Id 0xc8, DeviceId0 0x40, DeviceId1 0x15
+flash size 2MB, sector count = 32
+Flash:  2 MB
+*** Warning - bad CRC, using default environment
+
+Power up PLL with outdiv = 0 then switch to 3
+In:    serial
+Out:   serial
+Err:   serial
+Net:   ath_gmac_enet_initialize...
+No valid address in Flash. Using fixed address
+ath_gmac_enet_initialize: reset mask:c02200
+athr_mgmt_init (MDC/MDIO config)::done
+Dragonfly  ----> S17 PHY *
+athrs17_reg_init: complete
+Max resets limit reached exiting...
+athr_gmac_sgmii_setup SGMII done
+: cfg1 0x80000000 cfg2 0x7114
+eth0: 00:03:7f:ff:ff:ff
+ath_gmac_phy_setup
+eth0 up
+eth0
+Qualcomm Atheros SPI NAND Driver, Version 0.1 (c) 2014  Qualcomm Atheros Inc.
+ath_spi_nand_ecc: furture feat = 0x10
+ath_spi_nand_ecc: middle feat = 0x10
+zte ath_spi_nand_read_id 0xc8d1
+zte ath_spi_nand_read_id 0xc8d1c8
+zte debug gd 128 oob
+====== NAND Parameters ======
+sc addr = 0x87fa6d10 page(write size) = 0x800 (erase size) block = 0x20000
+Setting 0x181162c0 to 0x4b962100
+Uaztemain: enter into !
+ZTE_InitFotaFlashPara: nand_curr_device=0
+zte_getHandOffState: read data=0x20 from 0x0
+Hit any key to stop autoboot:  0
+
+Loading from device 0: ath-spi-nand (offset 0x1800000)
+   Image Name:   MIPS OpenWrt Linux-3.3.8
+   Created:      2022-06-10  18:13:55 UTC
+   Image Type:   MIPS Linux Multi-File Image (lzma compressed)
+   Data Size:    1210077 Bytes =  1.2 MB
+   Load Address: 80060000
+   Entry Point:  80060000
+   Contents:
+   Image 0:  1210069 Bytes =  1.2 MB
+ath_spi_nand_page_read :status=0x1
+ath_spi_nand_page_read :status=0x1
+ath_spi_nand_page_read :status=0x1
+ath_spi_nand_page_read :status=0x1
+ath_spi_nand_page_read :status=0x1
+ath_spi_nand_page_read :status=0x1
+ath_spi_nand_page_read :status=0x1
+ath_spi_nand_page_read :status=0x1
+ath_spi_nand_page_read :status=0x1
+ath_spi_nand_page_read :status=0x1
+ath_spi_nand_page_read :status=0x1
+ath_spi_nand_page_read :status=0x1
+ath_spi_nand_page_read :status=0x1
+ath_spi_nand_page_read :status=0x1
+ath_spi_nand_page_read :status=0x1
+ath_spi_nand_page_read :status=0x1
+ath_spi_nand_page_read :status=0x1
+ath_spi_nand_page_read :status=0x1
+ath_spi_nand_page_read :status=0x1
+ath_spi_nand_page_read :status=0x1
+ath_spi_nand_page_read :status=0x1
+ath_spi_nand_page_read :status=0x1
+ath_spi_nand_page_read :status=0x1
+ath_spi_nand_page_read :status=0x1
+ath_spi_nand_page_read :status=0x1
+ath_spi_nand_page_read :status=0x1
+ath_spi_nand_page_read :status=0x1
+ath_spi_nand_page_read :status=0x1
+ath_spi_nand_page_read :status=0x1
+ath_spi_nand_page_read :status=0x1
+ath_spi_nand_page_read :status=0x1
+ath_spi_nand_page_read :status=0x1
+ath_spi_nand_page_read :status=0x1
+ath_spi_nand_page_read :status=0x1
+ath_spi_nand_page_read :status=0x1
+ath_spi_nand_page_read :status=0x1
+ath_spi_nand_page_read :status=0x1
+ath_spi_nand_page_read :status=0x1
+ath_spi_nand_page_read :status=0x1
+ath_spi_nand_page_read :status=0x1
+ath_spi_nand_page_read :status=0x1
+ath_spi_nand_page_read :status=0x1
+ath_spi_nand_page_read :status=0x1
+ath_spi_nand_page_read :status=0x1
+ath_spi_nand_page_read :status=0x1
+ath_spi_nand_page_read :status=0x1
+ath_spi_nand_page_read :status=0x1
+ath_spi_nand_page_read :status=0x1
+ath_spi_nand_page_read :status=0x1
+ath_spi_nand_page_read :status=0x1
+ath_spi_nand_page_read :status=0x1
+ath_spi_nand_page_read :status=0x1
+ath_spi_nand_page_read :status=0x1
+ath_spi_nand_page_read :status=0x1
+ath_spi_nand_page_read :status=0x1
+ath_spi_nand_page_read :status=0x1
+ath_spi_nand_page_read :status=0x1
+ath_spi_nand_page_read :status=0x1
+ath_spi_nand_page_read :status=0x1
+ath_spi_nand_page_read :status=0x1
+ath_spi_nand_page_read :status=0x1
+ath_spi_nand_page_read :status=0x1
+ath_spi_nand_page_read :status=0x1
+ath_spi_nand_page_read :status=0x1
+ath_spi_nand_page_read :status=0x1
+## Booting image at 81000000 ...
+   Image Name:   MIPS OpenWrt Linux-3.3.8
+   Created:      2022-06-10  18:13:55 UTC
+   Image Type:   MIPS Linux Multi-File Image (lzma compressed)
+   Data Size:    1210077 Bytes =  1.2 MB
+   Load Address: 80060000
+   Entry Point:  80060000
+   Contents:
+   Image 0:  1210069 Bytes =  1.2 MB
+   Verifying Checksum at 0x81000040 ...OK
+   Uncompressing Multi-File Image ... OK
+No initrd
+## Transferring control to Linux (at address 80060000) ...
+## Giving linux memsize in bytes, 134217728
+
+Starting kernel ...
+
+[    0.000000] Linux version 3.3.8 (zte@scl_xa24_241) (gcc version 4.6.3 20120201 (prerelease) (Linaro GCC 4.6-2012.02) ) #1 Sat Jun 11 02:13:06 CST 2022
+[    0.000000] bootconsole [early0] enabled
+[    0.000000] CPU revision is: 00019750 (MIPS 74Kc)
+[    0.000000] SoC: Qualcomm Atheros QCA956X rev 0
+[    0.000000] Clocks: CPU:775.000MHz, DDR:650.000MHz, AHB:258.333MHz, Ref:25.000MHz
+[    0.000000] Determined physical RAM map:
+[    0.000000]  memory: 08000000 @ 00000000 (usable)
+[    0.000000] User-defined physical RAM map:
+[    0.000000]  memory: 08000000 @ 00000000 (usable)
+[    0.000000] Initrd not found or empty - disabling initrd
+[    0.000000] Zone PFN ranges:
+[    0.000000]   Normal   0x00000000 -> 0x00008000
+[    0.000000] Movable zone start PFN for each node
+[    0.000000] Early memory PFN ranges
+[    0.000000]     0: 0x00000000 -> 0x00008000
+[    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 32512
+[    0.000000] Kernel command line:  board=AP152 console=ttyS0,115200 mtdparts=spi0.0:640k(u-boot),128k(u-boot-env),1280k(reserved1);spi0.1:640k(fota-flag),512k(art),512k(mac),768k(reserved2),4m(cfg-param),4m(log),640k(oops),5m(reserved3),8m(web),3m(kernel),26m(rootfs),25m(data),50m(fota),29m@0x1800000(firmware) mem=128M rootfstype=squashfs,jffs2 noinitrd crashkernel=10M@20M oops=panic
+[    0.000000] PID hash table entries: 512 (order: -1, 2048 bytes)
+[    0.000000] Dentry cache hash table entries: 16384 (order: 4, 65536 bytes)
+[    0.000000] Inode-cache hash table entries: 8192 (order: 3, 32768 bytes)
+[    0.000000] Primary instruction cache 64kB, VIPT, 4-way, linesize 32 bytes.
+[    0.000000] Primary data cache 32kB, 4-way, VIPT, cache aliases, linesize 32 bytes
+[    0.000000] Writing ErrCtl register=00000000
+[    0.000000] Readback ErrCtl register=00000000
+[    0.000000] Memory: 125784k/131072k available (2574k kernel code, 5288k reserved, 687k data, 228k init, 0k highmem)
+[    0.000000] SLUB: Genslabs=9, HWalign=32, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+[    0.000000] NR_IRQS:83
+[    0.000000] Calibrating delay loop... 385.84 BogoMIPS (lpj=1929216)
+[    0.060000] pid_max: default: 32768 minimum: 301
+[    0.060000] Mount-cache hash table entries: 512
+[    0.060000] Performance counters: mips/74K PMU enabled, 4 32-bit counters available to each CPU, irq 13
+[    0.070000] NET: Registered protocol family 16
+[    0.080000] gpiochip_add: registered GPIOs 0 to 22 on device: ath79
+[    0.080000] MIPS: machine is Qualcomm Atheros AP152 reference board
+[    0.090000]
+[    0.090000] WLAN firmware dump buffer allocation of 2097152 bytes @ address 0x87a00000- SUCCESS !!!
+[    0.100000] registering PCI controller with io_map_base unset
+[    0.310000] bio: create slab <bio-0> at 0
+[    0.310000] PCI host bridge to bus 0000:00
+[    0.320000] pci_bus 0000:00: root bus resource [mem 0x12000000-0x13ffffff]
+[    0.320000] pci_bus 0000:00: root bus resource [io  0x0001]
+[    0.330000] pci 0000:00:00.0: BAR 0: assigned [mem 0x12000000-0x121fffff 64bit]
+[    0.330000] pci 0000:00:00.0: using irq 40 for pin 1
+[    0.340000] Switching to clocksource MIPS
+[    0.340000] NET: Registered protocol family 2
+[    0.350000] IP route cache hash table entries: 1024 (order: 0, 4096 bytes)
+[    0.350000] TCP established hash table entries: 4096 (order: 3, 32768 bytes)
+[    0.360000] TCP bind hash table entries: 4096 (order: 2, 16384 bytes)
+[    0.360000] TCP: Hash tables configured (established 4096 bind 4096)
+[    0.370000] TCP reno registered
+[    0.370000] UDP hash table entries: 256 (order: 0, 4096 bytes)
+[    0.380000] UDP-Lite hash table entries: 256 (order: 0, 4096 bytes)
+[    0.380000] NET: Registered protocol family 1
+[    0.400000] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    0.400000] JFFS2 version 2.2 (NAND) (SUMMARY) (LZMA) (RTIME) (CMODE_PRIORITY) (c) 2001-2006 Red Hat, Inc.
+[    0.410000] msgmni has been set to 245
+[    0.420000] io scheduler noop registered
+[    0.420000] io scheduler deadline registered (default)
+[    0.430000] Serial: 8250/16550 driver, 1 ports, IRQ sharing disabled
+[    0.450000] serial8250.0: ttyS0 at MMIO 0x18020000 (irq = 11) is a 16550A
+[    0.460000] console [ttyS0] enabled, bootconsole disabled
+[    0.460000] console [ttyS0] enabled, bootconsole disabled
+[    0.470000] m25p80 spi0.0: found gd25q16csig, expected m25p80
+[    0.480000] m25p80 spi0.0: gd25q16csig (2048 Kbytes)
+[    0.490000] 3 cmdlinepart partitions found on MTD device spi0.0
+[    0.490000] Creating 3 MTD partitions on "spi0.0":
+[    0.500000] 0x000000000000-0x0000000a0000 : "u-boot"
+[    0.500000] 0x0000000a0000-0x0000000c0000 : "u-boot-env"
+[    0.510000] 0x0000000c0000-0x000000200000 : "reserved1"
+[    0.520000] zte gd nand
+[    0.520000] NAND device: Manufacturer ID: 0xc8, Chip ID: 0xd1 (Giga Device NAND 128MiB 3,3V 8-bit)
+[    0.530000] Scanning device for bad blocks
+[    0.560000] Bad eraseblock 127 at 0x000000fe0000
+[    0.750000] Bad eraseblock 1023 at 0x000007fe0000
+[    0.750000] 14 cmdlinepart partitions found on MTD device spi0.1
+[    0.760000] Creating 14 MTD partitions on "spi0.1":
+[    0.760000] 0x000000000000-0x0000000a0000 : "fota-flag"
+[    0.770000] 0x0000000a0000-0x000000120000 : "art"
+[    0.770000] 0x000000120000-0x0000001a0000 : "mac"
+[    0.780000] 0x0000001a0000-0x000000260000 : "reserved2"
+[    0.790000] 0x000000260000-0x000000660000 : "cfg-param"
+[    0.790000] 0x000000660000-0x000000a60000 : "log"
+[    0.800000] 0x000000a60000-0x000000b00000 : "oops"
+[    0.810000] 0x000000b00000-0x000001000000 : "reserved3"
+[    0.810000] 0x000001000000-0x000001800000 : "web"
+[    0.820000] 0x000001800000-0x000001b00000 : "kernel"
+[    0.820000] 0x000001b00000-0x000003500000 : "rootfs"
+[    0.830000] mtd: partition "rootfs" set to be root filesystem
+[    0.840000] 0x000003500000-0x000004e00000 : "data"
+[    0.840000] 0x000004e00000-0x000008000000 : "fota"
+[    0.850000] 0x000001800000-0x000003500000 : "firmware"
+[    0.990000] ag71xx_mdio: probed
+[    1.000000] zte_nand_local_read():Reading Flash for Calibraton data from 0x0 and partition name is mac
+[    1.010000] ***********************************************
+[    1.010000] AG71XX using MAC@ - using d4:72:26:7c:fd:59
+[    1.020000] ***********************************************
+[    1.030000] eth0: Atheros AG71xx at 0xb9000000, irq 4
+[    1.610000] eth0: Atheros AR8327 switch driver attached.
+[    4.500000] ag71xx ag71xx.0: eth0: connected to PHY at ag71xx-mdio.0:00 [uid=004dd036, driver=Atheros AR8216/AR8236/AR8316]
+[    4.510000] *************tian.zb test err=0***********************
+[    4.520000] input: gpio-keys-polled as /devices/platform/gpio-keys-polled/input/input0
+[    4.530000] zte gpio_keys_polled_check_state:report code=358 state=0
+[    4.530000] zte gpio_keys_polled_check_state:report code=352 state=0
+[    4.540000] zte gpio_keys_polled_check_state:report code=238 state=0
+[    4.550000] netem: version 1.3
+[    4.550000] u32 classifier
+[    4.550000]     Performance counters on
+[    4.560000]     input device check on
+[    4.560000]     Actions configured
+[    4.560000] TCP cubic registered
+[    4.570000] NET: Registered protocol family 17
+[    4.570000] 8021q: 802.1Q VLAN Support v1.8
+[    4.580000] ### of_selftest(): No testcase data in device tree; not running tests
+[    4.610000] VFS: Mounted root (squashfs filesystem) readonly on device 31:13.
+[    4.620000] Freeing unused kernel memory: 228k freed
+init started: BusyBox v1.19.4 (2022-06-11 00:24:04 CST)
+*****************ZTE rcS********************
+call startup scripts here\n
+[   11.190000] ssdk_plat_init start
+[   11.200000] Register QCA PHY driver
+[   11.200000] PHY ID is 0x4dd036
+[   11.300000] qca probe f1 phy driver succeeded!
+[   11.310000] qca-ssdk module init succeeded!
+[   11.850000] NET: Registered protocol family 10
+[   12.260000] SCSI subsystem initialized
+[   12.890000] usbcore: registered new interface driver usbfs
+[   12.900000] usbcore: registered new interface driver hub
+[   12.900000] usbcore: registered new device driver usb
+[   12.920000] Button Hotplug driver version 0.4.1
+[   13.270000] NTFS driver 2.1.30 [Flags: R/O MODULE].
+[   13.590000] Error: Driver 'gpio-keys-polled' is already registered, aborting...
+[   14.020000] PPP generic driver version 2.4.2
+[   14.270000] tun: Universal TUN/TAP device driver, 1.6
+[   14.270000] tun: (C) 1999-2004 Max Krasnyansky <maxk@qualcomm.com>
+[   14.300000] NET: Registered protocol family 24
+[   14.380000] bonding: Ethernet Channel Bonding Driver: v3.7.1 (April 27, 2011)
+[   14.450000] ip_tables: (C) 2000-2006 Netfilter Core Team
+[   14.760000] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[   14.760000] ehci-platform ehci-platform.0: Generic Platform EHCI Controller
+[   14.770000] ehci-platform ehci-platform.0: new USB bus registered, assigned bus number 1
+[   14.810000] ehci-platform ehci-platform.0: irq 48, io mem 0x1b000000
+[   14.830000] ehci-platform ehci-platform.0: USB 2.0 started, EHCI 1.00
+[   14.830000] hub 1-0:1.0: USB hub found
+[   14.840000] hub 1-0:1.0: 1 port detected
+[   14.840000] ehci-platform ehci-platform.1: Generic Platform EHCI Controller
+[   14.850000] ehci-platform ehci-platform.1: new USB bus registered, assigned bus number 2
+[   14.890000] ehci-platform ehci-platform.1: irq 49, io mem 0x1b400000
+[   14.910000] ehci-platform ehci-platform.1: USB 2.0 started, EHCI 1.00
+[   14.910000] hub 2-0:1.0: USB hub found
+[   14.920000] hub 2-0:1.0: 1 port detected
+[   15.160000] usb 1-1: new high-speed USB device number 2 using ehci-platform
+[   15.260000] nf_conntrack version 0.5.0 (1968 buckets, 7872 max)
+[   15.650000] ZTE Generic Netlink Module Inserted without Lock
+[   15.700000] xt_time: kernel timezone is -0000
+[   16.120000] nf_conntrack_rtsp v0.6.21 loading
+[   16.140000] nf_nat_rtsp v0.6.21 loading
+[   16.210000] ip6_tables: (C) 2000-2006 Netfilter Core Team
+[   16.370000] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[   16.810000] AR71XX_RESET_REG_WDOG_CTRL: 0x0
+[   16.810000]
+[   16.880000] cdc_acm 1-1:1.2: This device cannot do calls on its own. It is not a modem.
+[   16.890000] cdc_acm 1-1:1.2: ttyACM0: USB ACM device
+[   16.890000] usbcore: registered new interface driver cdc_acm
+[   16.900000] cdc_acm: USB Abstract Control Model driver for USB modems and ISDN adapters
+[   16.990000] usbcore: registered new interface driver usbserial
+[   16.990000] USB Serial support registered for generic
+[   17.000000] usbcore: registered new interface driver usbserial_generic
+[   17.010000] usbserial: USB Serial Driver core
+[   17.060000] Initializing USB Mass Storage driver...
+[   17.070000] usbcore: registered new interface driver usb-storage
+[   17.070000] USB Mass Storage support registered.
+[   17.090000] driver_info->flags 1020 idVendor 19d2 idProduct 1489
+[   17.100000] cdc_ether 1-1:1.6: ecm0: register 'cdc_ether' at usb-ehci-platform.0-1, CDC Ethernet Device, ea:de:be:99:66:44
+[   17.110000] usbcore: registered new interface driver cdc_ether
+[   17.190000] generic_rndis_bind: rx_urb_size: 0x3e80
+[   17.200000] generic_rndis_bind: data zero copy=1
+[   17.200000] driver_info->flags 3238 idVendor 19d2 idProduct 1489
+[   17.210000] rndis_host 1-1:1.0: usb0: register 'rndis_host' at usb-ehci-platform.0-1, RNDIS device, 9e:d5:e1:3f:b8:1d
+[   17.220000] usbcore: registered new interface driver rndis_host
+[   17.280000] USB Serial support registered for GSM modem (1-port)
+[   17.290000] usbcore: registered new interface driver option
+[   17.300000] option: v0.7.2:USB Driver for GSM modems
+[   17.360000] fuse init (API version 7.18)
+[   18.150000] yaffs: dev is 32505864 name is "mtdblock8" rw
+[   18.150000] yaffs: passed flags ""
+[   18.190000] yaffs: dev is 32505871 name is "mtdblock15" rw
+[   18.200000] yaffs: passed flags ""
+rm: can't remove '/etc_rw/fota/cp_failure_flag': No such file or directory
+SOS: FLAG is mtdblock7
+SOS: /etc_rw/fota/cfg_partiton_flag has content
+[   19.330000] yaffs: dev is 32505863 name is "mtdblock7" rw
+[   19.330000] yaffs: passed flags ""
+space usage of /etc_rw/config is 29%
+[   19.440000] yaffs: dev is 32505866 name is "mtdblock10" rw
+[   19.450000] yaffs: passed flags ""
+[   19.470000] ath79_spinand_read_page ecc err status=0x2
+SOS: /etc_rw/config use mtdblock7, /zte_backup use mtdblock10, now doing backup!
+rm: can't remove '/zte_backup/lost+found': Directory not empty
+[   21.580000] Load cfg new driver...
+[   21.590000] cfg init, /home/zte/ci/workspace/Soft4_MF286R_TMOPL_CPE/qsdk/build_dir/linux-ar71xx_generic/cfg-1.0/cfg_param.c 578
+[   21.600000]
+[   21.600000] wifi_chip1_ssid2_acc
+[   21.610000] 776966695f63686970315f73736964325f616363
+[   21.710000]
+[   21.710000]  cfg init end, /home/zte/ci/workspace/Soft4_MF286R_TMOPL_CPE/qsdk/build_dir/linux-ar71xx_generic/cfg-1.0/cfg_param.c 637
+[   21.720000] cfg init, /home/zte/ci/workspace/Soft4_MF286R_TMOPL_CPE/qsdk/build_dir/linux-ar71xx_generic/cfg-1.0/cfg_param.c 578
+[   21.740000]
+[   21.740000] TESTBITSIGNINFO=0000
+[   21.740000] 544553544249545349474e494e464f3d30303030
+[   21.750000]
+[   21.750000]  cfg init end, /home/zte/ci/workspace/Soft4_MF286R_TMOPL_CPE/qsdk/build_dir/linux-ar71xx_generic/cfg-1.0/cfg_param.c 637
+[   21.760000] cfg init, /home/zte/ci/workspace/Soft4_MF286R_TMOPL_CPE/qsdk/build_dir/linux-ar71xx_generic/cfg-1.0/cfg_param.c 578
+[   21.780000] cfg driver error: /etc_rw/inic/cert  open failure, file: /home/zte/ci/workspace/Soft4_MF286R_TMOPL_CPE/qsdk/build_dir/linux-ar71xx_generic/cfg-1.0/cfg_param.c, line: 857!
+[   21.790000]
+[   21.790000]
+[   21.800000] 0000000000000000000000000000000000000000
+[   21.800000]
+[   21.800000]  cfg init end, /home/zte/ci/workspace/Soft4_MF286R_TMOPL_CPE/qsdk/build_dir/linux-ar71xx_generic/cfg-1.0/cfg_param.c 637
+[   21.810000] cfg init, /home/zte/ci/workspace/Soft4_MF286R_TMOPL_CPE/qsdk/build_dir/linux-ar71xx_generic/cfg-1.0/cfg_param.c 578
+[   21.830000] cfg driver error: /etc_rw/inic/wapi  open failure, file: /home/zte/ci/workspace/Soft4_MF286R_TMOPL_CPE/qsdk/build_dir/linux-ar71xx_generic/cfg-1.0/cfg_param.c, line: 857!
+[   21.840000]
+[   21.850000]
+[   21.850000] 0000000000000000000000000000000000000000
+[   21.850000]
+[   21.850000]  cfg init end, /home/zte/ci/workspace/Soft4_MF286R_TMOPL_CPE/qsdk/build_dir/linux-ar71xx_generic/cfg-1.0/cfg_param.c 637
+[   21.890000] usbcore: registered new interface driver cdc_wdm
+[   22.340000] usbcore: registered new interface driver qmi_wwan
+mkdir: can't create directory '/dev/net': File exists
+mknod: dev/net/tun: File exists
+killall: syslogd: no process killed
+*************ZTE Init Script*************
+insmod: can't insert '/lib/modules/3.3.8/xt_time.ko': File exists
+rmmod: can't unload 'shortcut_fe_drv': unknown symbol in module, or unknown parameter
+[   23.520000] ipt_TRIGGER: module license 'unspecified' taints kernel.
+[   23.520000] Disabling lock debugging due to kernel taint
+[   23.530000] iptables target:TRIGGER __init
+[   23.600000] usbcore: registered new interface driver cdc_ncm
+enter is_fota_update_successed.
+find a good block.
+last find blk_num = 0
+****fota_update_flag in /dev/mtd3 is  ****
+Unable to open pidfile /var/run/nvramd.pid: No such file or directory
+reboot_schedule is disabled
+Create bridge br0..........
+/etc/init.d/rcS: /etc/init.d/zte_init.sh: line 85: telnetd: not found
+goahead initWebs info: webdir is /etc_ro/web/web!
+webs: Listening for HTTP requests at address 192.168.0.1
+matrixSslNewKeys 111111matrixSslLoadRsaKeys enter
+1a matrixSslLoadKeyMaterial enter
+[   38.220000] ADDRCONF(NETDEV_UP): eth0: link is not ready
+aaa psBrokenDownTimeCmp13 matrixSslLoadKeyMaterial
+webs: Listening for HTTPS requests at port 443
+
+ SSDK Init OK!
+operate done.
+
+* daemon not running. starting it now on port 5037 *
+enter launch_server server_port is 5037
+launch_server pipe path & pid: /usr/bin/adb, 0
+pid=0 and server_port is : 5037
+launch_server pipe path & pid: /usr/bin/adb, 772
+launch_server temp value: O,K,
+
+* daemon started successfully *
+
+ SSDK Init OK!
+operate done.
+
+
+ SSDK Init OK!
+operate done.
+
+
+ SSDK Init OK!
+operate done.
+
+
+ SSDK Init OK!
+operate done.
+
+
+ SSDK Init OK!
+operate done.
+
+
+ SSDK Init OK!
+operate done.
+
+
+ SSDK Init OK!
+operate done.
+
+
+ SSDK Init OK!
+operate done.
+
+
+ SSDK Init OK!
+operate done.
+
+
+ SSDK Init OK!
+operate done.
+
+
+ SSDK Init OK!
+operate done.
+
+
+ SSDK Init OK!
+operate done.
+
+
+ SSDK Init OK!
+operate done.
+
+
+ SSDK Init OK!
+operate done.
+
+
+ SSDK Init OK!
+operate done.
+
+
+ SSDK Init OK!
+operate done.
+
+
+ SSDK Init OK!
+operate done.
+
+
+ SSDK Init OK!
+operate done.
+
+
+ SSDK Init OK!
+operate done.
+
+
+ SSDK Init OK!
+operate done.
+
+
+ SSDK Init OK!
+operate done.
+
+
+ SSDK Init OK!
+operate done.
+
+
+ SSDK Init OK!
+operate done.
+
+monitor:add@/devices/virtual/net/eth0.1
+monitor:ACTION=add
+monitor:DEVPATH=/devices/virtual/net/eth0.1
+monitor:SUBSYSTEM=net
+monitor:INTERFACE=eth0.1
+monitor:IFINDEX=8
+monitor:SEQNUM=632
+monitor:event { 'add', '' }
+monitor:add@/devices/virtual/net/eth0.1/queues/tx-0
+monitor:ACTION=add
+monitor:DEVPATH=/devices/virtual/net/eth0.1/queues/tx-0
+monitor:SUBSYSTEM=queues
+monitor:SEQNUM=633
+monitor:event { 'add', '' }
+monitor:add@/devices/virtual/net/eth0.2
+monitor:ACTION=add
+monitor:DEVPATH=/devices/virtual/net/eth0.2
+monitor:SUBSYSTEM=net
+monitor:INTERFACE=eth0.2
+monitor:IFINDEX=9
+monitor:SEQNUM=634
+monitor:event { 'add', '' }
+monitor:add@/devices/virtual/net/eth0.2/queues/tx-0
+monitor:ACTION=add
+monitor:DEVPATH=/devices/virtual/net/eth0.2/queues/tx-0
+monitor:SUBSYSTEM=queues
+monitor:SEQNUM=635
+monitor:event { 'add', '' }
+[   39.530000] ADDRCONF(NETDEV_UP): eth0.1: link is not ready
+[   39.540000] ADDRCONF(NETDEV_UP): eth0.2: link is not ready
+[   39.690000] ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[   39.700000] eth0: link up (1000Mbps/Full duplex)
+[   39.710000]
+[   39.710000] /home/zte/ci/workspace/Soft4_MF286R_TMOPL_CPE/qsdk/build_dir/linux-ar71xx_generic/zte_genl_kernel-1.0/zte_genl_kernel_main.c[177]: ERROR:Build msg struct failed, snd_pid=-1, genl_switch=1!
+[   39.740000] ADDRCONF(NETDEV_CHANGE): eth0.1: link becomes ready
+[   39.740000] ADDRCONF(NETDEV_CHANGE): eth0.2: link becomes ready
+opms_wan_ifname=usb0
+LanIfName=br0
+CURRENT WAN MODE:PPP
+ dual_core_board_if= ....
+[   40.730000] eth0: link up (1000Mbps/Full duplex)
+[   40.740000]
+[   40.740000] /home/zte/ci/workspace/Soft4_MF286R_TMOPL_CPE/qsdk/build_dir/linux-ar71xx_generic/zte_genl_kernel-1.0/zte_genl_kernel_main.c[177]: ERROR:Build msg struct failed, snd_pid=-1, genl_switch=1!
+[   41.170000]
+[   41.170000] /home/zte/ci/workspace/Soft4_MF286R_TMOPL_CPE/qsdk/build_dir/linux-ar71xx_generic/zte_genl_kernel-1.0/zte_genl_kernel_main.c[197]: INFO:Recv from userspace: [Connect request from userspace
+[   41.190000] ]
+[   41.200000]
+[   41.200000] /home/zte/ci/workspace/Soft4_MF286R_TMOPL_CPE/qsdk/build_dir/linux-ar71xx_generic/zte_genl_kernel-1.0/zte_genl_kernel_main.c[169]: INFO:send msg to user ok, cmd=1, msg=1000
+[   41.210000]
+[   41.210000] /home/zte/ci/workspace/Soft4_MF286R_TMOPL_CPE/qsdk/build_dir/linux-ar71xx_generic/zte_genl_kernel-1.0/zte_genl_kernel_main.c[169]: INFO:send msg to user ok, cmd=3, msg=
+zte_wifi_dfs_status_process: dfs=[]
+iptables: No chain/target/match by that name.
+internet.sh is called, the argument is []
+killall: pppoecd: no process killed
+killall: udhcpc: no process killed
+killall: zte_router: no process killed
+killall: zte_trx_router: no process killed
+killall: udhcpd: no process killed
+killall: dnsmasq: no process killed
+killall: miniupnpd: no process killed
+passwd: no record of admin in /etc/shadow, using /etc/passwd
+Changing password for admin
+New password:
+Retype password:
+Password for admin changed by admin
+call setPortAsAllLAN............
+3 KB/s (146 bytes in 0.043s)
+lan_ip: 192.168.0.1, lan_netmask: 255.255.255.0..........
+[   42.120000] device eth0.1 entered promiscuous mode
+[   42.130000] device eth0 entered promiscuous mode
+[   42.130000] br0: port 1(eth0.1) entered forwarding state
+[   42.140000] br0: port 1(eth0.1) entered forwarding state
+[   42.150000] device eth0.2 entered promiscuous mode
+[   42.150000] br0: port 2(eth0.2) entered forwarding state
+[   42.160000] br0: port 2(eth0.2) entered forwarding state
+opms_wan_ifname=usb0
+[   42.240000] br0: port 1(eth0.1) entered forwarding state
+[   42.260000] br0: port 2(eth0.2) entered forwarding state
+opms_wan_ifname=usb0
+LanIfName=br0
+killall: udhcpd: no process killed
+killall: dnsmasq: no process killed
+check mac ip bind plan
+mac_ip_list:
+mac ip list is null!
+check mac ip bind plan
+mac_ip_list:
+mac ip list is null!
+opms_wan_ifname=usb0
+LanIfName=br0
+#######start the mtu_set.sh##########
+192.168.0.1255.255.255.0init_dns_ip:tmp_byte_netmask is 0
+init_dns_ip:tmp_byte_netmask is 255
+init_dns_ip:tmp_byte_netmask is 255
+init_dns_ip:tmp_byte_netmask is 255
+#######end the mtu_set.sh##########
+enter setVoipPortAsLAN()...
+opms_wan_ifname=usb0
+LanIfName=br0
+iptables v1.4.10: Couldn't load target `vpn_client_output':File not found
+
+Try `iptables -h' or 'iptables --help' for more information.
+iptables: No chain/target/match by that name.
+iptables: No chain/target/match by that name.
+iptables v1.4.10: Couldn't load target `vpn_client_prerouting':File not found
+
+Try `iptables -h' or 'iptables --help' for more information.
+iptables: No chain/target/match by that name.
+iptables: No chain/target/match by that name.
+iptables v1.4.10: Couldn't load target `remote_mark':File not found
+
+Try `iptables -h' or 'iptables --help' for more information.
+iptables: No chain/target/match by that name.
+iptables: No chain/target/match by that name.
+iptables: No chain/target/match by that name.
+iptables: No chain/target/match by that name.
+iptables: No chain/target/match by that name.
+iptables: No chain/target/match by that name.
+iptables: No chain/target/match by that name.
+iptables: No chain/target/match by that name.
+iptables v1.4.10: Couldn't load target `filter_fw_level':File not found
+
+Try `iptables -h' or 'iptables --help' for more information.
+iptables: No chain/target/match by that name.
+ip6tables: No chain/target/match by that name.
+ip6tables: No chain/target/match by that name.
+ip6tables: No chain/target/match by that name.
+ip6tables: No chain/target/match by that name.
+ip6tables v1.4.10: Couldn't load target `filter_fw_level':File not found
+
+Try `ip6tables -h' or 'ip6tables --help' for more information.
+ip6tables: No chain/target/match by that name.
+iptables: No chain/target/match by that name.
+iptables: No chain/target/match by that name.
+iptables: No chain/target/match by that name.
+iptables: No chain/target/match by that name.
+iptables: No chain/target/match by that name.
+iptables: No chain/target/match by that name.
+iptables: No chain/target/match by that name.
+iptables: No chain/target/match by that name.
+iptables: No chain/target/match by that name.
+iptables: No chain/target/match by that name.
+iptables: No chain/target/match by that name.
+iptables: No chain/target/match by that name.
+[   45.120000] br0: port 2(eth0.2) entered disabled state
+[   45.120000] br0: port 1(eth0.1) entered disabled state
+[   45.160000] br0: port 2(eth0.2) entered forwarding state
+[   45.160000] br0: port 2(eth0.2) entered forwarding state
+[   45.170000] br0: port 1(eth0.1) entered forwarding state
+[   45.180000] br0: port 1(eth0.1) entered forwarding state
+[   45.260000] br0: port 2(eth0.2) entered forwarding state
+[   45.280000] br0: port 1(eth0.1) entered forwarding state
+zte_port_status_monitor_create_msg_queue(): msgid = [294921]
+Sat Jan  1 00:00:00 UTC 2000
+/bin/sh: zte_user_connect: not found
+tcp_detect_port_list: 53,123,1900,139,445,4719,80,443,7547
+[   47.220000] +++++++http_redirect load, g_web_redirect_gateway=[192.168.0.1]...
+[   47.220000] +++++++http_redirect load, g_web_redirect_mode=[http]...
+monitor:add@/module/zte_http_redirect
+monitor:ACTION=add
+monitor:DEVPATH=/module/zte_http_redirect
+monitor:SUBSYSTEM=module
+monitor:SEQNUM=636
+monitor:event { 'add', '' }
+[   47.350000]
+[   47.350000] /home/zte/ci/workspace/Soft4_MF286R_TMOPL_CPE/qsdk/build_dir/linux-ar71xx_generic/zte_genl_kernel-1.0/zte_genl_kernel_main.c[197]: INFO:Recv from userspace: [5]
+opms_wan_ifname=usb0
+LanIfName=br0
+killall: miniupnpd: no process killed
+[   47.590000]
+[   47.590000] /home/zte/ci/workspace/Soft4_MF286R_TMOPL_CPE/qsdk/build_dir/linux-ar71xx_generic/zte_genl_kernel-1.0/zte_genl_kernel_main.c[197]: INFO:Recv from userspace: [5]
+[   47.630000]
+[   47.630000] /home/zte/ci/workspace/Soft4_MF286R_TMOPL_CPE/qsdk/build_dir/linux-ar71xx_generic/zte_genl_kernel-1.0/zte_genl_kernel_main.c[197]: INFO:Recv from userspace: [5]
+opms_wan_ifname=usb0
+LanIfName=br0
+iptables: No chain/target/match by that name.
+iptables v1.4.10: Couldn't load target `MINIUPNPD':File not found
+
+Try `iptables -h' or 'iptables --help' for more information.
+iptables: No chain/target/match by that name.
+iptables: No chain/target/match by that name.
+iptables v1.4.10: Couldn't load target `MINIUPNPD':File not found
+
+Try `iptables -h' or 'iptables --help' for more information.
+iptables: No chain/target/match by that name.
+iptables: No chain/target/match by that name.
+iptables v1.4.10: Couldn't load target `MINIUPNPD-POSTROUTING':File not found
+
+Try `iptables -h' or 'iptables --help' for more information.
+iptables: No chain/target/match by that name.
+killall: miniupnpd: no process killed
+opms_wan_ifname=usb0
+LanIfName=br0
+iptables: No chain/target/match by that name.
+iptables v1.4.10: Couldn't load target `MINIUPNPD':File not found
+
+Try `iptables -h' or 'iptables --help' for more information.
+iptables: No chain/target/match by that name.
+iptables: No chain/target/match by that name.
+iptables v1.4.10: Couldn't load target `MINIUPNPD':File not found
+
+Try `iptables -h' or 'iptables --help' for more information.
+iptables: No chain/target/match by that name.
+iptables: No chain/target/match by that name.
+iptables v1.4.10: Couldn't load target `MINIUPNPD-POSTROUTING':File not found
+
+Try `iptables -h' or 'iptables --help' for more information.
+iptables: No chain/target/match by that name.
+************start dos_attack_defender.sh*****************
+[   49.310000] set 1
+normal mode!
+
+Please press Enter to activate this console. iptables: No chain/target/match by that name.
+iptables v1.4.10: Couldn't load target `dosattack_filter':File not found
+
+Try `iptables -h' or 'iptables --help' for more information.
+iptables: No chain/target/match by that name.
+/dev/mtdblock15 on /etc_rw/fota type yaffs2 (rw,relatime)
+mtdblock15 already mounted!
+************end dos_attack_defender.sh*****************
+insmod: can't insert '/lib/modules/3.3.8/nf_conntrack_sip.ko': File exists
+insmod: can't insert '/lib/modules/3.3.8/nf_nat_sip.ko': File exists
+insmod: can't insert '/lib/modules/3.3.8/nf_conntrack_pptp.ko': File exists
+path: etc_rw...
+enter the wifi_create_0 function
+path: etc_rw...
+enter the wifi_create_2 function
+path: etc_rw...
+insmod: can't insert '/lib/modules/3.3.8/nf_nat_pptp.ko': File exists
+path: etc_rw...
+enter the wifi_create_3 function
+enter the wifi_create_1 function
+insmod: can't insert '/lib/modules/3.3.8/nf_conntrack_ftp.ko': File exists
+insmod: can't insert '/lib/modules/3.3.8/nf_nat_ftp.ko': File exists
+insmod: can't insert '/lib/modules/3.3.8/nf_conntrack_h323.ko': File exists
+insmod: can't insert '/lib/modules/3.3.8/nf_nat_h323.ko': File exists
+insmod: can't insert '/lib/modules/3.3.8/nf_conntrack_rtsp.ko': File exists
+insmod: can't insert '/lib/modules/3.3.8/nf_nat_rtsp.ko': File exists
+insmod: can't insert '/lib/modules/3.3.8/nf_conntrack_tftp.ko': File exists
+insmod: can't insert '/lib/modules/3.3.8/nf_nat_tftp.ko': File exists
+opms_wan_ifname=usb0
+LanIfName=br0
+iptables: No chain/target/match by that name.
+377+0 records in
+377+0 records out
+iptables: No chain/target/match by that name.
+ip6tables: No chain/target/match by that name.
+iptables: Chain already exists.
+ip6tables: Chain already exists.
+377+0 records in
+377+0 records out
+tcp_detect_port_list: 53,123,1900,139,445,4719,80,443,7547
+opms_wan_ifname=usb0
+LanIfName=br0
+killall: miniupnpd: no process killed
+opms_wan_ifname=usb0
+LanIfName=br0
+iptables: No chain/target/match by that name.
+iptables v1.4.10: Couldn't load target `MINIUPNPD':File not found
+
+Try `iptables -h' or 'iptables --help' for more information.
+iptables: No chain/target/match by that name.
+iptables: No chain/target/match by that name.
+iptables v1.4.10: Couldn't load target `MINIUPNPD':File not found
+
+Try `iptables -h' or 'iptables --help' for more information.
+iptables: No chain/target/match by that na[   52.950000] __mm_init_module
+me.
+monitor:add@/module/mem_manager
+monitor:ACTION=add
+monitor:DEVPATH=/module/mem_manager
+monitor:SUBSYSTEM=module
+monitor:SEQNUM=637
+monitor:event { 'add', '' }
+iptables: No chain/target/match by that name.
+iptables v1.4.10: Couldn't load target `MINIUPNPD-POSTROUTING':File not found
+
+Try `iptables -h' or 'iptables --help' for more information.
+iptables: No chain/target/match by that name.
+killall: miniupnpd: no process killed
+opms_wan_ifname=usb0
+LanIfName=br0
+iptables: No chain/target/match by that name.
+iptables v1.4.10: Couldn't load target `MINIUPNPD':File not found
+
+Try `iptables -h' or 'iptables --help' for more information.
+iptables: No chain/target/match by that name.
+iptables: No chain/target/match by that name.
+iptables v1.4.10: Couldn't load target `MINIUPNPD':File not found
+
+Try `iptables -h' or 'iptables --help' for more information.
+iptables: No chain/target/match by that name.
+iptables: No chain/target/match by that name.
+iptables v1.4.10: Couldn't load target `MINIUPNPD-POSTROUTING':File not found
+
+Try `iptables -h' or 'iptables --help' for more information.
+iptables: No chain/target/match by that name.
+************start dos_attack_defender.sh*****************
+iptables: No chain/target/match by that name.
+************end dos_attack_defender.sh*****************
+monitor:add@/module/asf
+monitor:ACTION=add
+monitor:DEVPATH=/module/asf
+monitor:SUBSYSTEM=module
+monitor:SEQNUM=638
+monitor:event { 'add', '' }
+monitor:add@/module/qdf
+monitor:ACTION=add
+monitor:DEVPATH=/module/qdf
+monitor:SUBSYSTEM=module
+monitor:SEQNUM=639
+monitor:event { 'add', '' }
+[   54.020000] ath_dfs: Version 2.0.0
+[   54.020000] Copyright (c) 2005-2006 Atheros Communications, Inc. All Rights Reserved
+monitor:add@/module/ath_dfs
+monitor:ACTION=add
+monitor:DEVPATH=/module/ath_dfs
+monitor:SUBSYSTEM=module
+monitor:SEQNUM=640
+monitor:event { 'add', '' }
+iptables: Bad rule (does a matching rule exist in that chain?).
+iptables: Bad rule (does a matching rule exist in that chain?).
+remotemg_white_list=[]
+enter add_remote_mgr_fw_items()
+add remote manager done.
+enter add_telnet()
+disable telnetd on lan side
+00:00:08 UP>>[update_control.c:2956]########---Update_Control Start---########
+firewall_sys_fw done
+iptables: Bad rule (does a matching rule exist in that chain?).
+iptables: Bad rule (does a matching rule exist in that chain?).
+iptables: Bad rule (does a matching rule exist in that chain?).
+iptables: Bad rule (does a matching rule exist in that chain?).
+insmod: can't insert '/lib/modules/3.3.8/shortcut-fe.ko': File exists
+insmod: can't insert '/lib/modules/3.3.8/shortcut-fe-ipv6.ko': File exists
+insmod: can't insert '/lib/modules/3.3.8/shortcut-fe-cm.ko': File exists
+00:00:10 UP>>[update_control.c:2958]modem is ASR_MODEM
+/sbin/firewall_setting_level.sh: no dev in, set usb0!
+/sbin/firewall_setting_level.sh: no firewall_level spi, exit 0
+/sbin/firewall_setting_level.sh: no dev in, set usb0!
+/sbin/firewall_setting_level.sh: no firewall_level spi, exit 0
+/sbin/firewall_setting_level.sh: no dev in, set usb0!
+/sbin/firewall_setting_level.sh: no firewall_level spi, exit 0
+tr069 func is not support, return!
+iptables: No chain/target/match by that name.
+iptables: No chain/target/match by that name.
+iptables: No chain/target/match by that name.
+iptables: No chain/target/match by that name.
+iptables: No chain/target/match by that name.
+iptables: No chain/target/match by that name.
+iptables: No chain/target/match by that name.
+monitor:add@/module/umac
+monitor:ACTION=add
+monitor:DEVPATH=/module/umac
+monitor:SUBSYSTEM=module
+monitor:SEQNUM=641
+monitor:event { 'add', '' }
+ip6tables: No chain/target/match by that name.
+ip6tables: No chain/target/match by that name.
+ip6tables: No chain/target/match by that name.
+ip6tables: No chain/target/match by that name.
+ip6tables: No chain/target/match by that name.
+ip6tables: No chain/target/match by that name.
+insmod: can't insert '/lib/modules/3.3.8/shortcut-fe.ko': File exists
+insmod: can't insert '/lib/modules/3.3.8/shortcut-fe-ipv6.ko': File exists
+insmod: can't insert '/lib/modules/3.3.8/shortcut-fe-cm.ko': File exists
+[   59.080000] ath_hal: 0.9.17.1 (AR9380, REGOPS_FUNC, PRIVATE_DIAG, WRITE_EEPROM, 11D)
+monitor:add@/module/ath_hal
+monitor:ACTION=add
+monitor:DEVPATH=/module/ath_hal
+monitor:SUBSYSTEM=module
+monitor:SEQNUM=642
+monitor:event { 'add', '' }
+[   59.180000] ath_rate_atheros: Copyright (c) 2001-2005 Atheros Communications, Inc, All Rights Reserved
+monitor:add@/module/ath_rate_atheros
+monitor:ACTION=add
+monitor:DEVPATH=/module/ath_rate_atheros
+monitor:SUBSYSTEM=module
+monitor:SEQNUM=643
+monitor:event { 'add', '' }
+[   59.350000] ath_tx99: Version 2.0
+[   59.350000] Copyright (c) 2010 Atheros Communications, Inc, All Rights Reserved
+monitor:add@/module/hst_tx99
+monitor:ACTION=add
+monitor:DEVPATH=/module/hst_tx99
+monitor:SUBSYSTEM=module
+monitor:SEQNUM=644
+monitor:event { 'add', '' }
+qrcode_text = WIFI:T:WPA;S:T-Mobile-ZTE MF286-7CFE59;P:69377971;
+qrcode_text = WIFI:T:WPA;S:T-Mobile-ZTE MF286-7CFE59;P:69377971;
+qrcode_text = WIFI:T:WPA;S:T-Mobile-ZTE MF286-7CFE59_2;P:53013653;
+qrcode_text = WIFI:T:WPA;S:T-Mobile-ZTE MF286-7CFE59_2;P:53013653;
+speed limit is disabled, so we need to enable SFE,clear iptable and tc rules
+insmod: can't insert '/lib/modules/3.3.8/shortcut-fe-cm.ko': File exists
+iptables: No chain/target/match by that name.
+iptables: No chain/target/match by that name.
+[   60.110000] ath_dev: Copyright (c) 2001-2007 Atheros Communications, Inc, All Rights Reserved
+monitor:add@/module/ath_dev
+monitor:ACTION=add
+monitor:DEVPATH=/module/ath_dev
+monitor:SUBSYSTEM=module
+monitor:SEQNUM=645
+monitor:event { 'add', '' }
+[   60.580000] __ath_attach: Set global_scn[0]
+[   60.580000] *** All the minfree values should be <= ATH_TXBUF-32, otherwise default value will be used instead ***
+[   60.590000] ACBKMinfree = 48
+[   60.600000] ACBEMinfree = 32
+[   60.600000] ACVIMinfree = 16
+[   60.600000] ACVOMinfree = 0
+[   60.600000] CABMinfree = 48
+[   60.610000] UAPSDMinfree = 0
+[   60.610000] ATH_TXBUF=1500
+[   60.620000] Enterprise mode: 0x03bda000
+[   60.630000] Restoring Cal data from FS
+[   60.630000]
+[   60.630000] ART Version : -48.0.0
+[   60.630000] SW Image Version : -48.0.0.0.0
+[   60.640000] Board Revision :
+[   60.640000] ar9300_attach: nf_2_nom -110 nf_2_max -60 nf_2_min -125
+[   60.650000] Green-AP : Green-AP : Attached
+[   60.650000]
+monitor:add@/module/qca_da
+monitor:ACTION=add
+monitor:DEVPATH=[   60.670000] ath_get_caps[6167] rx chainmask mismatch actual 7 sc_chainmak 0
+/module/qca_da
+[   60.670000] ath_get_caps[6142] tx chainmask mismatch actual 7 sc_chainmak 0
+monitor:SUBSYSTEM=module
+monito[   60.690000] band steering initialized for direct attach hardware
+r:SEQNUM=646
+mo[   60.700000] ieee80211_bsteering_attach: Band steering initialized
+nitor:event { 'a[   60.700000] ath_attach_dfs[12601] dfsdomain 1
+dd', '' }
+[   60.710000] dfs_attach: event log enabled by default
+[   60.720000] ath_attach: Set global_ic[1]..gloabl_ic ptr:849123c4
+[   60.730000] osif_wrap_attach:441 osif wrap attached
+[   60.740000] osif_wrap_devt_init:402 osif wrap dev table init done
+[   60.740000]  Wrap Attached: Wrap_com =8598de00 ic->ic_wrap_com=8598de00 &wrap_com->wc_devt=8598de00
+[   60.760000] ath_tx_paprd_init sc 85aa8000 PAPRD disabled in HAL
+monitor:add@/devices/virtual/net[   60.770000] wifi0: Atheros 956X: mem=0xb8100000, irq=47
+/wifi0
+monitor:[   60.770000] ath_da_pci:  (Atheros/multi-bss)
+ACTION=add
+monitor:DEVPATH=/devices/virtual/net/wifi0
+monitor:SUBSYSTEM=net
+monitor:INTERFACE=wifi0
+monitor:IFINDEX=10
+monitor:SEQNUM=647
+monitor:event { 'add', '' }
+monitor:add@/devices/virtual/net/wifi0/queues/tx-0
+monitor:ACTION=add
+monitor:DEVPATH=/devices/virtual/net/wifi0/queues/tx-0
+monitor:SUBSYSTEM=queues
+monitor:SEQNUM=648
+monitor:event { 'add', '' }
+monitor:add@/bus/platform/drivers/ath9k_ahb
+monitor:ACTION=add
+monitor:DEVPATH=/bus/platform/drivers/ath9k_ahb
+monitor:SUBSYSTEM=drivers
+monitor:SEQNUM=649
+monitor:event { 'add', '' }
+monitor:add@/bus/pci/drivers/ath_da_pci
+monitor:ACTION=add
+monitor:DEVPATH=/bus/pci/drivers/ath_da_pci
+monitor:SUBSYSTEM=drivers
+monitor:SEQNUM=650
+monitor:event { 'add', '' }
+RTNETLINK answers: Invalid argument
+RTNETLINK answers: Invalid argument
+/sbin/second_ssid_access_control.sh: line 17: ebtables: not found
+/sbin/second_ssid_access_control.sh: line 18: ebtables: not found
+/sbin/second_ssid_access_control.sh: line 19: ebtables: not found
+/sbin/second_ssid_access_control.sh: line 20: ebtables: not found
+/sbin/second_ssid_access_control.sh: line 21: ebtables: not found
+lan_sec_ssid_control [] allow webUI
+monitor:add@/mod[   64.020000] ath_ol_pci:  (Atheros/multi-bss)
+ule/qca_ol
+moni[   64.030000] hif_pci_enable_bus: con_mode = 0x0, device_id = 0x56tor:ACTION=add
+
+[   64.030000] ath_ol_pci 0000:00:00.0: BAR 0: assigned [mem 0x12000000-0x121fffff 64bit]
+monitor:DEVPATH=[   64.040000] PCI: Enabling device 0000:00:00.0 (0000 -> 0002)
+/module/qca_ol
+[   64.050000] hif_pci_enable_bus: hif_enable_pci donemonitor:SUBSYSTE *********** QCA9888 *************M=module
+monitohif_pci_enable_bus: hif_type = 0xe, target_type = 0xcr:SEQNUM=651
+mohif_pci_enable_bus: hif_pci_probe_tgt_wakeup donenitor:event { 'ahif_target_sync: Loop checking FW signaldd', '' }
+monithif_target_sync: Got FW signal, retries = 0or:add@/bus/plathif_config_ce: ce_init doneform/drivers/athhif_config_ce: X, ret = 010k_ahb
+monitorhif_set_hia: E:ACTION=add
+monitor:DEVPATH=/bus/platform/drivers/ath10k_ahb
+monitor:SUBSYSTEM=drivers
+monitor:SEQNUM=652
+mohif_set_hia_extnd: Enitor:event { 'a
+[   64.110000] chip_id 0xc chip_revision 0x0
+dd', '' }
+[   64.110000]
+[   64.110000]  CLOCK PLL skipped
+[   64.120000] hif_set_hia_extnd: setting the target pll frac ffffffff intval ffffffff
+[   64.120000] hif_set_hia_extnd: no frac provided, skipping pre-configuring PLL
+[   64.140000] hif_pci_bus_configure: hif_set_hia donehif_configure_irq: Ehif_pci_configure_legacy_irq: Ehif_pci_configure_legacy_irq: X, ret = 0hif_enable: X OKhif_napi_create: NAPI structures initializedhif_napi_create: NAPI id 6 created for pipe 5qca_napi_create: napi instance 32 created on pipe 4
+[   64.160000] hif_napi_event: received evnt: CONF cmd; v = 1 (state=0x1)hif_napi_event: setting configuration to ON
+[   64.170000] __ol_ath_attach() Allocated scn 84b00380
+[   64.180000] __ol_ath_attach: dev name wifi1
+[   64.180000] ol_ath_attach interface_id 1
+[   64.190000] ol_target_init() BMI inited.
+[   64.210000] ol_target_init() BMI Get Target Info.
+[   64.210000] Chip id: 0xc, chip version: 0x1000000
+[   64.220000]
+[   64.220000]  CE WAR Disabled
+[   64.220000] NUM_DEV=1 FWMODE=0x2 FWSUBMODE=0x0 FWBR_BUF 0
+[   64.240000] ol_target_init() configure Target .
+[   64.240000]
+[   64.240000]  Target Version is 1000000
+[   64.250000]
+[   64.250000]  Flash Download Address  c0000
+[   64.250000] ol_transfer_bin_file: flash data file defined
+[   64.260000] ol_transfer_bin_file[3637] Get Caldata for wifi1.
+[   64.270000] qdf_fs_read[59], Open File /tmp/wifi1.caldata SUCCESS!!file system magic:16914836super blocksize:4096inode 6734file size:12064qc98xx_verify_checksum: flash checksum passed: 0x513f
+[   64.290000] ol_transfer_bin_file 3698: Download Flash data len 12064
+[   64.320000] Board extended Data download address: 0x0
+[   64.390000]
+[   64.390000]  Board data initialized
+[   64.390000] ol_ath_download_firmware: Download OTP, flash download ADDRESS 0xc0000
+[   64.400000]
+[   64.400000]  Selecting  OTP binary for CHIP Version 0
+monitor:add@/devices/pci0000:00/0000:00:00.0/firmware/0000:00:00.0
+monitor:ACTION=add
+monitor:DEVPATH=/devices/pci0000:00/0000:00:00.0/firmware/0000:00:00.0
+monitor:SUBSYSTEM=firmware
+monitor:FIRMWARE=QCA9888/hw.2/otp.bin
+monitor:TIMEOUT=60
+monitor:ASYNC=0
+monitor:SEQNUM=653
+monitor:event { 'add', '' }
+Reading[   64.820000] ol_transfer_bin_file 3518: downloading file 0, Download data len 9084
+Read OK chip1_ssid1_qr monitor:remove@/devices/pci0000:00/0000:00:00.0/firmware/0000:00:00.0
+monitor:ACTION=remove
+monitor:DEVPATH=/devices/pci0000:00/0000:00:00.0/firmware/0000:00:00.0
+monitor:SUBSYSTEM=firmware
+monitor:FIRMWARE=QCA9888/hw.2/otp.bin
+monitor:TIMEOUT=60
+monitor:ASYNC=0
+monitor:SEQNUM=654
+monitor:event { 'remove', '' }
+OK      chip2_ssid1_qr o
+OK      chip2_ssid2_qr
+OK      chip1_ssid1_qr
+[   64.910000]
+[   64.910000]  First OTP send param 8000
+OK      chip1_ssid2_qr o
+[   65.150000] ol_ath_download_firmware :First OTP download and Execute is good address:0x4000 return param 4660
+[   65.160000] ol_ath_download_firmware:##Board Id 16 , CHIP Id 0
+[   65.170000] ol_ath_download_firmware: BOARDDATA DOWNLOAD TO address 0xc0000
+[   65.180000]
+[   65.180000]  wifi1: Selecting board data file name boardData_2_0_QCA9888_5G_Y9690.bin
+[   65.190000] ol_transfer_bin_file: Board Data File download to address=0xc0000 file name=QCA9888/hw.2/boardData_2_0_QCA9888_5G_Y9690.bin
+monitor:add@/devices/pci0000:00/0000:00:00.0/firmware/0000:00:00.0
+monitor:ACTION=add
+monitor:DEVPATH=/devices/pci0000:00/0000:00:00.0/firmware/0000:00:00.0
+[   65.220000] ol_transfer_bin_file 3518: downloading file 3, Download data len 12064
+monitor:SUBSYSTEM=firmware
+moni[   65.230000] Board extended Data download address: 0x0
+tor:FIRMWARE=QCA9888/hw.2/boardData_2_0_QCA9888_5G_Y9690.bin
+monitor:TIMEOUT=60
+monitor:ASYNC=0
+monitor:SEQNUM=655
+monitor:event { 'add', '' }
+monitor:remove@/devices/pci0000:00/0000:00:00.0/firmware/0000:00:00.0
+monitor:ACTION=remove
+monitor:DEVPATH=/devices/pci00[   65.260000] ol_ath_download_firmware: Using 0x1234 for the remainder of init
+00:00/0000:00:00[   65.270000]
+[   65.270000]  Selecting  OTP binary for CHIP Version 0
+.0/firmware/0000:00:00.0
+monitor:SUBSYSTEM=firmware
+monitor:FIRMWARE=QCA9888/hw.2/boardData_2_0_QCA9888_5G_Y9690.bin
+monitor:TIMEOUT=60
+monitor:ASYNC=0
+mon[   65.290000] ol_transfer_bin_file 3518: downloading file 0, Download data len 9084
+itor:SEQNUM=656
+monitor:event { 'remove', '' }
+monitor:add@/devices/pci0000:00/0000:00:00.0/firmware/0000:00:00.0
+monitor:ACTION=add
+monitor:DEVPATH=/devices/pci0000:00/0000:00:00.0/firmware/0000:00:00.0
+monitor:SUBSYSTEM=firmware
+monitor:FIRMWARE=QCA9888/hw.2/otp.bin
+monitor:TIMEOUT=60
+monitor:ASYNC=0
+monitor:SEQNUM=657
+monitor:event { 'add', '' }
+monitor:remove@/devices/pci0000:00/0000:00:00.0/firmware/0000:00:00.0
+monitor:ACTION=[   65.330000]
+[   65.330000]  [Flash] : Ignore Module param
+remove
+monitor:[   65.340000]
+[   65.340000]  Second otp download Param 10000
+DEVPATH=/devices/pci0000:00/0000:00:00.0/firmware/0000:00:00.0
+monitor:SUBSYSTEM=firmware
+monitor:FIRMWARE=QCA9888/hw.2/otp.bin
+monitor:TIMEOUT=60
+monitor:ASYNC=0
+monitor:SEQNUM=658
+monitor:event { 'remove', '' }
+[   65.600000] ol_ath_download_firmware : Second OTP download and Execute is good, param=0x0
+[   65.610000]
+[   65.610000]  Mission mode: Firmware CHIP Version 0
+monitor:add@/devices/pci0000:00/0000:00:00.0/firmware/0000:00:00.0
+monitor:ACTION=add
+monitor:DEVPATH=/devices/pci0000:00/0000:00:00.0/firmware/0000:00:00.0
+monitor:SUBSYSTEM=firmware
+monitor:FIRMWARE=QCA9888/hw.2/athwlan.codeswap.bin
+monitor:TIMEOUT=60
+monitor:ASYNC=0
+monitor:SEQNUM=659
+monitor:event { 'add', '' }
+[   66.340000] ol_swap_seg_alloc: Successfully allocated memory for SWAP size=262144
+monitor:remove@/devices/pci0000:00/0000:00:00.0/firmware/0000:00:00.0
+monitor:ACTION=remove
+monitor:DEVPATH=/devices/pci0000:00/0000:00:00.0/firmware/0000:00:00.0
+monitor:SUBSYSTEM=firmware
+monitor:FIRMWARE=QCA9888/hw.2/athwlan.codeswap.bin
+monitor:TIMEOUT=60
+monitor:ASYNC=0
+monitor:SEQNUM=660
+monitor:event { 'remove', '' }
+monitor:add@/devices/pci0000:00/0000:00:00.0/firmware/0000:00:00.0
+monitor:ACTION=add
+monitor:DEVPATH=/devices/pci0000:00/0000:[   66.390000] Swap: bytes_left to copy: fw:16; dma_page:27497
+00:00.0/firmware[   66.400000] Swap: wrong length read:0
+/0000:00:00.0
+m[   66.400000] ol_swap_wlan_memory_expansion: Swap total_bytes copied: 234647 Target address 41a528
+onitor:SUBSYSTEM[   66.410000] scn=84b00380  target_write_addr=41a528 seg_info=859a6f10
+=firmware
+monit[   66.420000] ol_transfer_swap_struct:Code swap structure successfully downloaded for bin type =2
+or:FIRMWARE=QCA9[   66.430000] bin_filename=QCA9888/hw.2/athwlan.bin swap_filename=/lib/firmware/QCA9888/hw.2/athwlan.codeswap.bin
+888/hw.2/athwlan[   66.440000] ol_transfer_bin_file: Downloading firmware file: QCA9888/hw.2/athwlan.bin
+.codeswap.bin
+monitor:TIMEOUT=60
+monitor:ASYNC=0
+monitor:SEQNUM=661
+monitor:event { 'add', '' }
+monitor:remove@/devices/pci0000:00/0000:00:00.0/firmware/0000:00:00.0
+monitor:ACTION=remove
+monitor:DEVPATH=/devices/pci0000:00/0000:00:00.0/firmware/0000:00:00.0
+monitor:SUBSYSTEM=firmware
+monitor:FIRMWARE=QCA9888/hw.2/athwlan.codeswap.bin
+monitor:TIMEOUT=60
+monitor:ASYNC=0
+monitor:SEQNUM=662
+monitor:event { 'remove', '' }
+monitor:add@/devices/pci0000:00/0000:00:00.0/firmware/0000:00:00.0
+monitor:ACTION=add
+monitor:DEVPATH=/devices/pci0000:00/0000:00:00.0/firmware/0000:00:00.0
+monitor:SUBSYSTEM=firmware
+monitor:FIRMWARE=QCA9888/hw.2/athwlan.bin
+monitor:TIMEOUT=60
+monitor:ASYNC=0
+monitor:SEQNUM=663
+monitor:event { 'add', '' }
+[   68.120000] ol_transfer_bin_file 3518: downloading file 1, Download data len 373688
+monitor:remove@/devices/pci0000:00/0000:00:00.0/firmware/0000:00:00.0
+monitor:ACTION=remove
+monitor:DEVPATH=/devices/pci0000:00/0000:00:00.0/firmware/0000:00:00.0
+monitor:SUBSYSTEM=firmware
+monitor:FIRMWARE=QCA9888/hw.2/athwlan.bin
+monitor:TIMEOUT=60
+monitor:ASYNC=0
+monitor:SEQNUM=664
+monitor:event { 'remove', '' }
+[   69.610000] ol_target_init() Download FW done.
+[   69.610000] ol_ath_attach() WMI attached. wmi_handle 872da000
+[   69.620000] wmi_unified_register_event_handler: Event id 62 is unavailable
+[   69.630000] +htc_create ..  HIF :84ac4000-htc_create: (0x8584b000)
+[   69.630000] htc_wmi_init() HT Create . 8584b000
+[   69.650000] htc_wmi_init 7528 host_enable 0 nss_nwifi_offload 0
+[   69.660000] ol_ath_set_default_tgt_config : AC Minfree buffer allocation through module param (umac.ko)
+[   69.670000]  OL_ACBKMinfree : 0
+[   69.670000]  OL_ACBEMinfree : 0
+[   69.670000]  OL_ACVIMinfree : 0
+[   69.680000]  OL_ACVOMinfree : 0
+[   69.680000] hif_enable_fastpath, Enabling fastpath mode
+[   69.680000] +HWT
+[   69.690000] hif_completion_thread_startup: pipe_num:0 pipe_info:0x84ac705chif_completion_thread_startup: pipe_num:3 pipe_info:0x84ac711chif_completion_thread_startup: pipe_num:4 pipe_info:0x84ac715c
+[   69.710000] -HWT
+[   69.710000] Startup Mode-0 set
+[   69.710000]
+[   69.710000] <=== cfg max peer id 288 ====>
+[   69.720000] htt_peer_map_timer_init Enter pdev 84205000 hrtimer 84205950
+[   69.730000]
+[   69.730000]  htt_alloc_peer_map_mem : Alloc Success : host q vaddr 84186c00 paddr 4186c00
+[   69.740000]
+[   69.740000]  htt_alloc_peer_map_mem : Flush Interval Configured to 256 pkts
+[   69.750000] ol_txrx_pdev_attach: 2500 tx desc's allocated ; range starts from 83c60000
+[   69.760000] Firmware_Build_Number:79
+[   69.770000] FW wireless modes: 0x7f9001
+[   69.770000] num_rf_chain:0x00000002  ht_cap_info:0x0000085b  vht_cap_info:0x339979fa  vht_supp_mcs:0x0000fffa
+[   69.780000] wmi_service_coex_gpio 0, wmi_service_4_wire_coex_support 0, coex_version 0
+[   69.790000]
+[   69.790000] Sending Ext resource cfg: HOST PLATFORM as 1
+[   69.790000] fw_feature_bitmap as 50 to TGT
+[   69.800000] ol_ath_service_ready_event: tt_support: 1
+[   69.800000] ol_ath_service_ready_event: periodic_chan_stats: 1
+[   69.810000] ol_ath_service_ready_event: sw_cal_support_check_flag: 1
+[   69.820000] Peer Caching Enabled ; num_peers = 38, num_active_peers = 25 num_tids = 50, num_vdevs = 5
+[   69.830000] idx 1 req 2  num_units 1 num_unit_info 12 unit size 256 actual units 26
+[   69.830000] ol_ath_alloc_host_mem_chunk req_id 2 idx 0 num_units 26 unit_len 256,
+[   69.840000] idx 2 req 3  num_units 1 num_unit_info 12 unit size 1024 actual units 26
+[   69.850000] ol_ath_alloc_host_mem_chunk req_id 3 idx 1 num_units 26 unit_len 1024,
+[   69.860000] idx 3 req 4  num_units 1 num_unit_info 12 unit size 4096 actual units 26
+[   69.870000] ol_ath_alloc_host_mem_chunk req_id 4 idx 2 num_units 26 unit_len 4096,
+[   69.870000] idx 0 req 1  num_units 0 num_unit_info 2 unit size 896 actual units 39
+[   69.880000] ol_ath_alloc_host_mem_chunk req_id 1 idx 3 num_units 39 unit_len 896,
+[   69.890000] idx 4 req 5  num_units 0 num_unit_info 2 unit size 1948 actual units 39
+[   69.900000] ol_ath_alloc_host_mem_chunk req_id 5 idx 4 num_units 39 unit_len 1948,
+[   69.910000] Support not added yet for Service 91
+[   69.910000] Support not added yet for Service 92
+[   69.920000] No EXT_MSG send INIT now
+[   69.920000] chunk 0 len 6656 requested , ptr  0x3c58000
+[   69.930000] chunk 1 len 26624 requested , ptr  0x3cc0000
+[   69.930000] chunk 2 len 106496 requested , ptr  0x3ce0000
+[   69.940000] chunk 3 len 34944 requested , ptr  0x3cd0000
+[   69.940000] chunk 4 len 75972 requested , ptr  0x3d00000
+[   69.950000] ol_ath_service_ready_event[4259] WAPI MBSSID 2
+[   69.990000] Version = 16777216 3  status = 0
+[   69.990000] ol_ath_connect_htc() WMI is ready
+[   70.000000] htt_h2t_frag_desc_bank_cfg_msg - HTT_H2T_MSG_TYPE_FRAG_DESC_BANK_CFG sent to FW for radio ID = 1
+[   70.010000] target uses HTT version 2.2; host uses 2.2
+[   70.020000] ol_ath_attach() connect HTC.
+[   70.020000] bypasswmi : 0
+[   70.030000] ol_regdmn_start: reg-domain param: regdmn=0, countryName=, wModeSelect=FFFFFFFF, netBand=FFFFFFFF, extendedChanMode=0.
+[   70.040000] ol_regdmn_init_channels: !avail mode 0x7f9001 (0x2) flags 0x2150
+[   70.050000] ol_regdmn_init_channels: !avail mode 0x7f9001 (0x4) flags 0xa0
+[   70.050000] ol_regdmn_init_channels: !avail mode 0x7f9001 (0x8) flags 0xc0
+[   70.060000] ol_regdmn_init_channels: !avail mode 0x7f9001 (0x20) flags 0xd0
+[   70.070000] ol_regdmn_init_channels: !avail mode 0x7f9001 (0x40) flags 0x150
+[   70.080000] ol_regdmn_init_channels: !avail mode 0x7f9001 (0x800) flags 0x10080
+[   70.080000] ol_regdmn_init_channels: !avail mode 0x7f9001 (0x2000) flags 0x20080
+[   70.090000] ol_regdmn_init_channels: !avail mode 0x7f9001 (0x4000) flags 0x40080
+[   70.100000] Add VHT80 channel: 5210
+[   70.100000] Add VHT80 channel: 5290
+[   70.110000] Add VHT80 channel: 5530
+[   70.110000] Add VHT80 channel: 5610
+[   70.110000] Add VHT80 channel: 5690
+[   70.120000] Add VHT80 channel: 5775
+[   70.120000] Skipping VHT80 channel 5825
+[   70.120000] EMI WAR rejecting fc1 > fc2 Combination cfreq1:5530, cfreq2:5210 in case of VHT80+80
+[   70.130000] EMI WAR rejecting fc1 > fc2 Combination cfreq1:5530, cfreq2:5290 in case of VHT80+80
+[   70.140000] EMI WAR rejecting fc1 > fc2 Combination cfreq1:5530, cfreq2:5210 in case of VHT80+80
+[   70.150000] EMI WAR rejecting fc1 > fc2 Combination cfreq1:5530, cfreq2:5290 in case of VHT80+80
+[   70.160000] EMI WAR rejecting fc1 > fc2 Combination cfreq1:5530, cfreq2:5210 in case of VHT80+80
+[   70.170000] EMI WAR rejecting fc1 > fc2 Combination cfreq1:5530, cfreq2:5290 in case of VHT80+80
+[   70.180000] EMI WAR rejecting fc1 > fc2 Combination cfreq1:5530, cfreq2:5210 in case of VHT80+80
+[   70.190000] EMI WAR rejecting fc1 > fc2 Combination cfreq1:5530, cfreq2:5290 in case of VHT80+80
+[   70.200000] EMI WAR rejecting fc1 > fc2 Combination cfreq1:5610, cfreq2:5210 in case of VHT80+80
+[   70.210000] EMI WAR rejecting fc1 > fc2 Combination cfreq1:5610, cfreq2:5290 in case of VHT80+80
+[   70.220000] EMI WAR rejecting fc1 > fc2 Combination cfreq1:5610, cfreq2:5210 in case of VHT80+80
+[   70.220000] EMI WAR rejecting fc1 > fc2 Combination cfreq1:5610, cfreq2:5290 in case of VHT80+80
+[   70.230000] EMI WAR rejecting fc1 > fc2 Combination cfreq1:5610, cfreq2:5210 in case of VHT80+80
+[   70.240000] EMI WAR rejecting fc1 > fc2 Combination cfreq1:5610, cfreq2:5290 in case of VHT80+80
+[   70.250000] EMI WAR rejecting fc1 > fc2 Combination cfreq1:5610, cfreq2:5210 in case of VHT80+80
+[   70.260000] EMI WAR rejecting fc1 > fc2 Combination cfreq1:5610, cfreq2:5290 in case of VHT80+80
+[   70.270000] EMI WAR rejecting fc1 > fc2 Combination cfreq1:5690, cfreq2:5210 in case of VHT80+80
+[   70.280000] EMI WAR rejecting fc1 > fc2 Combination cfreq1:5690, cfreq2:5290 in case of VHT80+80
+[   70.290000] EMI WAR rejecting fc1 > fc2 Combination cfreq1:5690, cfreq2:5530 in case of VHT80+80
+[   70.300000] EMI WAR rejecting fc1 > fc2 Combination cfreq1:5690, cfreq2:5210 in case of VHT80+80
+[   70.310000] EMI WAR rejecting fc1 > fc2 Combination cfreq1:5690, cfreq2:5290 in case of VHT80+80
+[   70.320000] EMI WAR rejecting fc1 > fc2 Combination cfreq1:5690, cfreq2:5530 in case of VHT80+80
+[   70.320000] EMI WAR rejecting fc1 > fc2 Combination cfreq1:5775, cfreq2:5210 in case of VHT80+80
+[   70.330000] EMI WAR rejecting fc1 > fc2 Combination cfreq1:5775, cfreq2:5290 in case of VHT80+80
+[   70.340000] EMI WAR rejecting fc1 > fc2 Combination cfreq1:5775, cfreq2:5530 in case of VHT80+80
+[   70.350000] EMI WAR rejecting fc1 > fc2 Combination cfreq1:5775, cfreq2:5610 in case of VHT80+80
+[   70.360000] EMI WAR rejecting fc1 > fc2 Combination cfreq1:5775, cfreq2:5690 in case of VHT80+80
+[   70.370000] EMI WAR rejecting fc1 > fc2 Combination cfreq1:5775, cfreq2:5210 in case of VHT80+80
+[   70.380000] EMI WAR rejecting fc1 > fc2 Combination cfreq1:5775, cfreq2:5290 in case of VHT80+80
+[   70.390000] EMI WAR rejecting fc1 > fc2 Combination cfreq1:5775, cfreq2:5530 in case of VHT80+80
+[   70.400000] EMI WAR rejecting fc1 > fc2 Combination cfreq1:5775, cfreq2:5610 in case of VHT80+80
+[   70.410000] EMI WAR rejecting fc1 > fc2 Combination cfreq1:5775, cfreq2:5690 in case of VHT80+80
+[   70.420000] EMI WAR rejecting fc1 > fc2 Combination cfreq1:5775, cfreq2:5210 in case of VHT80+80
+[   70.420000] EMI WAR rejecting fc1 > fc2 Combination cfreq1:5775, cfreq2:5290 in case of VHT80+80
+[   70.430000] EMI WAR rejecting fc1 > fc2 Combination cfreq1:5775, cfreq2:5530 in case of VHT80+80
+[   70.440000] EMI WAR rejecting fc1 > fc2 Combination cfreq1:5775, cfreq2:5610 in case of VHT80+80
+[   70.450000] EMI WAR rejecting fc1 > fc2 Combination cfreq1:5775, cfreq2:5690 in case of VHT80+80
+[   70.460000] EMI WAR rejecting fc1 > fc2 Combination cfreq1:5775, cfreq2:5210 in case of VHT80+80
+[   70.470000] EMI WAR rejecting fc1 > fc2 Combination cfreq1:5775, cfreq2:5290 in case of VHT80+80
+[   70.480000] EMI WAR rejecting fc1 > fc2 Combination cfreq1:5775, cfreq2:5530 in case of VHT80+80
+[   70.490000] EMI WAR rejecting fc1 > fc2 Combination cfreq1:5775, cfreq2:5610 in case of VHT80+80
+[   70.500000] EMI WAR rejecting fc1 > fc2 Combination cfreq1:5775, cfreq2:5690 in case of VHT80+80
+[   70.510000] freq=58
+[   70.510000] freq=106
+[   70.510000] freq=122
+[   70.520000] freq=138
+[   70.520000] OL Resmgr Init-ed
+[   70.520000] ieee80211_bsteering_attach: Band steering initialized
+[   70.530000] Green-AP : Green-AP : Attached
+[   70.530000]
+[   70.530000] Green-AP : Attached
+[   70.540000] rate power table override is only supported for AR98XX
+[   70.540000] ol_if_dfs_attach: called; ptr=83cc997c, radar_info=84ac3b58
+[   70.550000] dfs_attach: event log enabled by default
+[   70.560000] >>>> CB Set   (null)
+[   70.560000] __init_external_data_flow_report() enter
+[   70.570000] ol_ath_attach() UMAC attach .
+[   70.570000]
+[   70.570000]  BURSTING enabled by default
+[   70.580000] ol_ath_attach: Set global_ic[2] ..ptr:849123c4
+[   70.580000] osif_wrap_attach:441 osif wrap attached
+[   70.590000] osif_wrap_devt_init:402 osif wrap dev table init done
+[   70.590000]  Wrap Attached: Wrap_com =85a56000 ic->ic_wrap_com=85a56000 &wrap_com->wc_devt=85a56000
+[   70.600000] __ol_ath_attach: needed_headroom reservation 60
+monitor:add@/devices/pci0000:00/[   70.620000] ol_ath_thermal_mitigation_attach: --
+0000:00:00.0/net[   70.630000] ol_ath_pci_probe num_radios=0, wifi_radios[0].sc = 84b00380 wifi_radio_type = 2
+/wifi1
+monitor:[   70.640000] ath_sysfs_diag_init: diag_fsattr
+ACTION=add
+moni[   70.650000] [wifi1] tor:DEVPATH=/devFWLOG: [77805] WAL_DBGID_TX_AC_BUFFER_SET ( ices/pci0000:00/0x30000:00:00.0/net, /wifi1
+monitor:0x1eSUBSYSTEM=net
+m, onitor:INTERFACE0x94c=wifi1
+monitor:, IFINDEX=11
+moni0x94ctor:SEQNUM=665
+, monitor:event { 0x0'add', '' }
+mon )
+, or:add@/device[   70.670000] [wifi1] s/pci0000:00/000FWLOG: [77805] WAL_DBGID_TX_AC_BUFFER_SET ( 0:00:00.0/net/wi0x12fi1/queues/tx-0
+  monitor:ACTION=0x1eadd
+monitor:DEV, PATH=/devices/pc0x94ci0000:00/0000:00, :00.0/net/wifi1/0x94cqueues/tx-0
+mon, itor:SUBSYSTEM=q0x0ueues
+monitor:S )
+EQNUM=666
+monit[   70.700000] [wifi1] or:event { 'add'FWLOG: [77805] WAL_DBGID_TX_AC_BUFFER_SET ( , '' }
+0x45, 0x1e, 0x94c, 0x94c, 0x0 )
+[   70.710000] [wifi1] FWLOG: [77805] WAL_DBGID_TX_AC_BUFFER_SET ( 0x67, 0x1e, 0x94c, 0x94c, 0x0 )
+[   70.720000] [wifi1] FWLOG: [77805] WAL_DBGID_TX_AC_BUFFER_SET ( 0x100, 0x11e1a300 )
+[   70.730000] [wifi1] FWLOG: [78336] UNKNOWN 22:55 ( 0x3a, 0xa10, 0x160, 0x10, 0x0 )
+monitor:add@/bus/pci/drivers/ath_ol_pci
+monitor:ACTION=add
+monitor:DEVPATH=/bus/pci/drivers/ath_ol_pci
+monitor:SUBSYSTEM=drivers
+monitor:SEQNUM=667
+monitor:event { 'add', '' }
+[   70.810000]  pktlog_init: Initializing Pktlog for AR900B, pktlog_hdr_size = 16
+[   70.810000] +hif_update_pipe_callback pipeid 8
+[   70.820000] -hif_update_pipe_callback
+monitor:add@/module/ath_pktlog
+monitor:ACTION=add
+monitor:DEVPATH=/module/ath_pktlog
+monitor:SUBSYSTEM=module
+monitor:SEQNUM=668
+monitor:event { 'add', '' }
+Invalid command : txbf_snd_int
+[   70.890000] set TXBF_SND_PERIOD: value 100 wmi_status 0
+Invalid command : obss_rx_rssi_th
+add light on here if need
+[   71.430000] wlan_vap_create : enter. devhandle=0x85ab0380, opmode=IEEE80211_M_HOSTAP, flags=0x100
+[   71.440000] ieee80211_mbo_vattach:MBO Initialized
+[   71.450000] ieee80211_oce_vattach: OCE Initialized
+[   71.450000] wlan_vap_create : exit. devhandle=0x85ab0380, vap=0x84bf0000, opmode=IEEE80211_M_HOSTAP, flags=0x100.
+[   71.460000] VAP device ath00 created osifp: (83dd5380) os_if: (84bf0000)
+monitor:add@/devices/virtual/net/ath00
+monitor:ACTION=add
+monitor:DEVPATH=/devices/virtual/net/ath00
+monitor:SUBSYSTEM=net
+monitor:INTERFACE=ath00
+monitor:IFINDEX=12
+monitor:SEQNUM=669
+monitor:event { 'add', '' }
+monitor:add@/devices/virtual/net/ath00/queues/tx-0
+monitor:ACTION=add
+monitor:DEVPATH=/devices/virtual/net/ath00/queues/tx-0
+monitor:SUBSYSTEM=queues
+monitor:SEQNUM=670
+monitor:event { 'add', '' }
+Interface doesn't accept private ioctl...
+stafwd (8BE0): Invalid argument
+[   71.580000] device ath00 entered promiscuous mode
+addd ath00 to br0
+[   71.640000] wlan_vap_create : enter. devhandle=0x84b00380, opmode=IEEE80211_M_HOSTAP, flags=0x100
+[   71.650000] send_vdev_create_cmd_non_tlv: ID = 0 Type = 1, Subtype = 0 VAP Addr = d4:72:26:7e:fe:59:
+[   71.660000] ieee80211_mbo_vattach:MBO Initialized
+[   71.660000] ieee80211_oce_vattach: OCE Initialized
+[   71.670000] wlan_vap_create : exit. devhandle=0x84b00380, vap=0x83e00000, opmode=IEEE80211_M_HOSTAP, flags=0x100.
+[   71.680000] Enabling TX checksum bit for the vap ath12 features 4000
+[   71.680000] Enabling SG bit for the vap ath12 features 4000
+[   71.690000] Enabling SG bit for the vap ath12 features 4000
+[   71.700000] Enabling TSO bit for the vap ath12 features 4000
+[   71.700000] Enabling LRO bit for the vap ath12 features 4000
+[   71.710000] VAP device ath12 created osifp: (83df8380) os_if: (83e00000)
+monitor:add@/devices/virtual/net/ath12
+monitor:ACTION=add
+monitor:DEVPATH=/devices/virtual/net/ath12
+monitor:SUBSYSTEM=net
+monitor:INTERFACE=ath12
+monitor:IFINDEX=13
+monitor:SEQNUM=671
+monitor:event { 'add', '' }
+monitor:add@/devices/virtual/net/ath12/queues/tx-0
+monitor:ACTION=add
+monitor:DEVPATH=/devices/virtual/net/ath12/queues/tx-0
+monitor:SUBSYSTEM=queues
+monitor:SEQNUM=672
+monitor:event { 'add', '' }
+Interface doesn't accept private ioctl...
+stafwd (8BE0): Invalid argument
+[   71.810000] device ath12 entered promiscuous mode
+addd ath12 to br0
+unzip: can't open /etc_rw/fota/image.zip, /etc_rw/fota/image.zip.zip, /etc_rw/fota/image.zip.ZIP
+cannot stat '/tmp/delta.package': No such file or directory
+00:00:26 UP>>[update_control.c:3018]start zte_dm
+00:00:26 UP>>[update_control.c:2251]fsm turn from 0 to 0.
+[   72.990000] Switching to Tx Mode-0
+Sat Jan  1 00:00[   73.660000]  ieee80211_ioctl_siwmode: imr.ifm_active=131712, new mode=3, valid=1
+:27 2000 main.c [   73.670000]  DEVICE IS DOWN ifname=ath00
+252 Configuratio[   73.670000]  DEVICE IS DOWN ifname=ath00
+n file: /tmp/secath00
+Sat Jan  1 00:00:27 2000 ../src/ap/hostapd.c 989 Using interface ath00 with hwaddr d4:72:26:7c:fe:59 and ssid "T-Mobile-ZTE MF286-7CFE59"
+[   74.020000] vap-0(ath00):set SIOC80211NWID, 25 characters
+[   74.020000]
+[   74.020000]  DES SSID SET=T-Mobile-ZTE MF286-7CFE59
+[   74.040000] Warning: node not in table 0x8420e000
+[   74.130000] br0: port 3(ath00) entered forwarding state
+[   74.130000] br0: port 3(ath00) entered forwarding state
+[   74.150000] 8021q: adding VLAN 0 to HW filter on device ath00
+[   74.160000] [vap-0(ath00): cc:d8:43:82:98:b2] discard ps-poll frame unassociated station
+[   74.230000] br0: port 3(ath00) entered forwarding state
+Sat Jan  1 00:00[   74.710000]  ieee80211_ioctl_siwmode: imr.ifm_active=66176, new mode=3, valid=1
+:28 2000 main.c 252 Configuration file: /tmp/secath12
+[   74.730000]  DEVICE IS DOWN ifname=ath12
+[   74.730000]  DEVICE IS DOWN ifname=ath12
+Sat Jan  1 00:00:28 2000 ../src/ap/hostapd.c 989 Using interface ath12 with hwaddr d4:72:26:7e:fe:59 and ssid "T-Mobile-ZTE MF286-7CFE59"
+[   75.110000] vap-0(ath12):set SIOC80211NWID, 25 characters
+[   75.110000]
+[   75.110000]  DES SSID SET=T-Mobile-ZTE MF286-7CFE59
+Sat Jan  1 00:00:29 2000 ../src/crypto/random.c 245 random: Cannot read from /dev/random: Resource temporarily unavailable
+[   75.160000] Sending SCAN START cmd
+[   75.160000] br0: port 4(ath12) entered forwarding state
+[   75.170000] br0: port 4(ath12) entered forwarding state
+[   75.170000] 8021q: adding VLAN 0 to HW filter on device ath12
+[   75.270000] br0: port 4(ath12) entered forwarding state
+[   75.650000] [wifi1] FWLOG: [83063] WAL_DBGID_SECURITY_ENCR_EN (  )
+[   75.650000] [wifi1] FWLOG: [83063] WAL_DBGID_SECURITY_MCAST_KEY_SET ( 0x1 )
+[   75.660000] [wifi1] FWLOG: [83102] WAL channel change freq=5260, mode=0 flags=0 rx_ok=1 tx_ok=1
+[   75.670000] [wifi1] FWLOG: [83416] WAL channel change freq=5280, mode=0 flags=0 rx_ok=1 tx_ok=1
+[   75.830000] _ieee80211_scan_unregister_event_handler: Failed to unregister evhandler=848795ac arg=85a60000
+[   75.830000]
+[   75.840000] osif_vap_stop: Scan in progress.. Cancelling it. vap: 0x84bf0000
+[   75.900000] br0: port 3(ath00) entered disabled state
+[   75.920000] ath_net80211_dfs_clist_update: called, cmd=1, nollist=  (null), nentries=0
+[   75.930000] ath_attach_dfs[12601] dfsdomain 1
+[   75.940000] dfs_attach: event log enabled by default
+[   75.960000] siwfreq
+[   75.970000] Set freq vap 0 stop send + 84bf0000
+[   75.970000] Set freq vap 0 stop send -84bf0000
+[   76.010000] Set wait done --84bf0000
+[   76.070000] Setting Max Stations:32
+[   76.180000] br0: port 3(ath00) entered forwarding state
+[   76.180000] br0: port 3(ath00) entered forwarding state
+[   76.190000] 8021q: adding VLAN 0 to HW filter on device ath00
+DM_RemoveFile name /etc_rw/config/tree_zdm.xml
+[   76.230000] ol_scan_unregister_event_handler: Failed to unregister evhandler=848795ac arg=83d20000
+[   76.230000]
+[   76.240000] osif_vap_stop: Scan in progress.. Cancelling it. vap: 0x83e00000
+[   76.250000] send_vdev_down_cmd_non_tlv for vap 0 (872da000)
+[   76.270000] br0: port 4(ath12) entered disabled state
+[   76.280000] br0: port 3(ath00) entered forwarding state
+[   76.300000] [ol_ath_iw_setcountry][1757] *p=50, *(p+1)=4c
+[   76.300000] isCountryCodeValid: EEPROM regdomain 0x0
+[   76.310000] ol_regdmn_init_channels: !avail mode 0x7f9001 (0x2) flags 0x2150
+[   76.310000] ol_regdmn_init_channels: !avail mode 0x7f9001 (0x4) flags 0xa0
+[   76.320000] ol_regdmn_init_channels: !avail mode 0x7f9001 (0x8) flags 0xc0
+[   76.330000] ol_regdmn_init_channels: !avail mode 0x7f9001 (0x20) flags 0xd0
+[   76.340000] ol_regdmn_init_channels: !avail mode 0x7f9001 (0x40) flags 0x150
+[   76.340000] ol_regdmn_init_channels: !avail mode 0x7f9001 (0x800) flags 0x10080
+[   76.350000] ol_regdmn_init_channels: !avail mode 0x7f9001 (0x2000) flags 0x20080
+[   76.360000] ol_regdmn_init_channels: !avail mode 0x7f9001 (0x4000) flags 0x40080
+[   76.370000] Add VHT80 channel: 5210
+[   76.370000] Add VHT80 channel: 5290
+[   76.380000] Add VHT80 channel: 5530
+[   76.380000] Add VHT80 channel: 5610
+[   76.380000] Skipping VHT80 channel 5660
+[   76.390000] Skipping VHT80 channel 5680
+[   76.390000] Skipping VHT80 channel 5700
+[   76.390000] EMI WAR rejecting fc1 > fc2 Combination cfreq1:5530, cfreq2:5210 in case of VHT80+80
+[   76.400000] EMI WAR rejecting fc1 > fc2 Combination cfreq1:5530, cfreq2:5290 in case of VHT80+80
+[   76.410000] EMI WAR rejecting fc1 > fc2 Combination cfreq1:5530, cfreq2:5210 in case of VHT80+80
+[   76.420000] EMI WAR rejecting fc1 > fc2 Combination cfreq1:5530, cfreq2:5290 in case of VHT80+80
+[   76.430000] EMI WAR rejecting fc1 > fc2 Combination cfreq1:5530, cfreq2:5210 in case of VHT80+80
+[   76.440000] EMI WAR rejecting fc1 > fc2 Combination cfreq1:5530, cfreq2:5290 in case of VHT80+80
+[   76.450000] EMI WAR rejecting fc1 > fc2 Combination cfreq1:5530, cfreq2:5210 in case of VHT80+80
+[   76.460000] EMI WAR rejecting fc1 > fc2 Combination cfreq1:5530, cfreq2:5290 in case of VHT80+80
+[   76.470000] EMI WAR rejecting fc1 > fc2 Combination cfreq1:5610, cfreq2:5210 in case of VHT80+80
+[   76.480000] EMI WAR rejecting fc1 > fc2 Combination cfreq1:5610, cfreq2:5290 in case of VHT80+80
+[   76.490000] EMI WAR rejecting fc1 > fc2 Combination cfreq1:5610, cfreq2:5210 in case of VHT80+80
+[   76.490000] EMI WAR rejecting fc1 > fc2 Combination cfreq1:5610, cfreq2:5290 in case of VHT80+80
+[   76.500000] EMI WAR rejecting fc1 > fc2 Combination cfreq1:5610, cfreq2:5210 in case of VHT80+80
+[   76.510000] EMI WAR rejecting fc1 > fc2 Combination cfreq1:5610, cfreq2:5290 in case of VHT80+80
+[   76.520000] EMI WAR rejecting fc1 > fc2 Combination cfreq1:5610, cfreq2:5210 in case of VHT80+80
+[   76.530000] EMI WAR rejecting fc1 > fc2 Combination cfreq1:5610, cfreq2:5290 in case of VHT80+80
+[   76.540000] freq=58
+[   76.540000] freq=106
+[   76.550000] freq=122
+[   76.570000] siwfreq
+[   76.580000] Set freq vap 0 stop send + 83e00000
+[   76.580000] Set freq vap 0 stop send -83e00000
+[   76.620000] Set wait done --83e00000
+[   76.640000] [wifi1] FWLOG: [83730] WAL channel change freq=5300, mode=0 flags=0 rx_ok=1 tx_ok=1
+[   76.650000] [wifi1] FWLOG: [84045] WAL channel change freq=5320, mode=0 flags=0 rx_ok=1 tx_ok=1
+[   76.660000] [wifi1] FWLOG: [84222] RESMGR_OCS_GEN_PERIODIC_NOA ( 0x0 )
+[   76.670000] [wifi1] FWLOG: [84222] RESMGR_OCS_GEN_PERIODIC_NOA ( 0x0 )
+[   76.680000] [wifi1] FWLOG: [84514] UNKNOWN 22:55 ( 0x37, 0x199, 0x130, 0x30, 0x0 )
+[   76.730000] Setting Max Stations:32
+[   76.760000] Sending SCAN START cmd
+[   76.760000] br0: port 4(ath12) entered forwarding state
+[   76.770000] br0: port 4(ath12) entered forwarding state
+[   76.770000] 8021q: adding VLAN 0 to HW filter on device ath12
+DM_GetFileSize get failed
+DM_RemoveFile name /etc_rw/fota/image.zip
+DM_RemoveFile name /etc_rw/config/FUMO_SESSION_KEY_dlResumeData.txt.0
+00:00:30 UP>>[libdua.c:149]dm_update_control_result=0
+[   76.870000] br0: port 4(ath12) entered forwarding state
+00:00:30 UP>>[libdua.c:165]fota_upgrade_result =
+
+DM_RemoveFile name /etc_rw/fota/image.zip
+DM_RemoveFile name /etc_rw/config/FUMO_SESSION_KEY_dlResumeData.txt.0
+[   77.640000] [wifi1] FWLOG: [84739] WAL channel change freq=5180, mode=0 flags=0 rx_ok=1 tx_ok=1
+[   77.650000] [wifi1] FWLOG: [85053] WAL channel change freq=5200, mode=0 flags=0 rx_ok=1 tx_ok=1
+[   77.660000] [wifi1] FWLOG: [85368] WAL channel change freq=5220, mode=0 flags=0 rx_ok=1 tx_ok=1
+[   78.650000] [wifi1] FWLOG: [85682] WAL channel change freq=5240, mode=0 flags=0 rx_ok=1 tx_ok=1
+[   78.650000] [wifi1] FWLOG: [85996] WAL channel change freq=5260, mode=0 flags=0 rx_ok=1 tx_ok=1
+[   78.660000] [wifi1] FWLOG: [86309] WAL channel change freq=5280, mode=0 flags=0 rx_ok=1 tx_ok=1
+[   78.670000] [wifi1] FWLOG: [86624] WAL channel change freq=5300, mode=0 flags=0 rx_ok=1 tx_ok=1
+[   78.960000]
+[   78.960000] /home/zte/ci/workspace/Soft4_MF286R_TMOPL_CPE/qsdk/build_dir/linux-ar71xx_generic/zte_genl_kernel-1.0/zte_genl_kernel_main.c[169]: INFO:send msg to user ok, cmd=3, msg=401
+[   78.980000]
+[   78.980000] /home/zte/ci/workspace/Soft4_MF286R_TMOPL_CPE/qsdk/build_dir/linux-ar71xx_generic/zte_genl_kernel-1.0/zte_genl_kernel_main.c[169]: INFO:send msg to user ok, cmd=3, msg=401
+zte_wifi_dfs_status_process: dfs=[401]
+zte_wifi_dfs_status_process: dfs=[401]
+[   79.020000] ol_scan_unregister_event_handler: Failed to unregister evhandler=848795ac arg=83d20000
+[   79.020000]
+[   79.030000] osif_vap_init: Scan in progress.. Cancelling it. vap: 0x83e00000
+[   79.040000] send_vdev_down_cmd_non_tlv for vap 0 (872da000)
+[   79.080000] Sending SCAN START cmd
+/bin/sh: zte_user_connect: not found
+/sbin/second_ssid_access_control.sh: line 17: ebtables: not found
+/sbin/second_ssid_access_control.sh: line 18: ebtables: not found
+/sbin/second_ssid_access_control.sh: line 19: ebtables: not found
+/sbin/second_ssid_access_control.sh: line 20: ebtables: not found
+/sbin/second_ssid_access_control.sh: line 21: ebtables: not found
+lan_sec_ssid_control [] allow webUI
+[   79.650000] [wifi1] FWLOG: [86938] WAL channel change freq=5320, mode=0 flags=0 rx_ok=1 tx_ok=1
+[   79.650000] [wifi1] FWLOG: [87078] RESMGR_OCS_GEN_PERIODIC_NOA ( 0x0 )
+[   79.660000] [wifi1] FWLOG: [87078] RESMGR_OCS_GEN_PERIODIC_NOA ( 0x0 )
+[   79.670000] [wifi1] FWLOG: [87114] WAL channel change freq=5180, mode=0 flags=0 rx_ok=1 tx_ok=1
+[   79.680000] [wifi1] FWLOG: [87428] WAL channel change freq=5200, mode=0 flags=0 rx_ok=1 tx_ok=1
+[   80.650000] [wifi1] FWLOG: [87743] WAL channel change freq=5220, mode=0 flags=0 rx_ok=1 tx_ok=1
+[   80.650000] [wifi1] FWLOG: [88057] WAL channel change freq=5240, mode=0 flags=0 rx_ok=1 tx_ok=1
+[   80.660000] [wifi1] FWLOG: [88371] WAL channel change freq=5260, mode=0 flags=0 rx_ok=1 tx_ok=1
+[   80.670000] [wifi1] FWLOG: [88684] WAL channel change freq=5280, mode=0 flags=0 rx_ok=1 tx_ok=1
+path: etc_rw...
+enter the wifi_create_0 function
+path: etc_rw...
+enter the wifi_create_2 function
+killall: lbd: no process killed
+path: etc_rw...
+enter the wifi_create_3 function
+path: etc_rw...
+enter the wifi_create_1 function
+[   81.650000] [wifi1] FWLOG: [88999] WAL channel change freq=5300, mode=0 flags=0 rx_ok=1 tx_ok=1
+[   81.660000] [wifi1] FWLOG: [89313] WAL channel change freq=5320, mode=0 flags=0 rx_ok=1 tx_ok=1
+[   81.670000] [wifi1] FWLOG: [89626] WAL channel change freq=5500, mode=0 flags=0 rx_ok=1 tx_ok=1
+qrcode_text = WIFI:T:WPA;S:T-Mobile-ZTE MF286-7CFE59;P:69377971;
+qrcode_text = WIFI:T:WPA;S:T-Mobile-ZTE MF286-7CFE59_2;P:53013653;
+Read OK chip1_ssid1_qr qrcode_text = WIFI:T:WPA;S:T-Mobile-ZTE MF286-7CFE59;P:69377971;
+OK      chip1_ssid1_qr
+Read OK chip2_ssid2_qr qrcode_text = WIFI:T:WPA;S:T-Mobile-ZTE MF286-7CFE59_2;P:53013653;
+OK      chip2_ssid2_qr
+OK      chip2_ssid1_qr o
+OK      chip1_ssid2_qr o
+[   82.650000] [wifi1] FWLOG: [89940] WAL channel change freq=5520, mode=0 flags=0 rx_ok=1 tx_ok=1
+[   82.660000] [wifi1] FWLOG: [90255] WAL channel change freq=5540, mode=0 flags=0 rx_ok=1 tx_ok=1
+[   82.660000] [wifi1] FWLOG: [90569] WAL channel change freq=5560, mode=0 flags=0 rx_ok=1 tx_ok=1
+[   83.650000] [wifi1] FWLOG: [90883] WAL channel change freq=5580, mode=0 flags=0 rx_ok=1 tx_ok=1
+[   83.660000] [wifi1] FWLOG: [91198] WAL channel change freq=5600, mode=0 flags=0 rx_ok=1 tx_ok=1
+[   83.660000] [wifi1] FWLOG: [91511] WAL channel change freq=5620, mode=0 flags=0 rx_ok=1 tx_ok=1
+[   84.650000] [wifi1] FWLOG: [91826] WAL channel change freq=5640, mode=0 flags=0 rx_ok=1 tx_ok=1
+[   84.660000] [wifi1] FWLOG: [92140] WAL channel change freq=5660, mode=0 flags=0 rx_ok=1 tx_ok=1
+[   84.660000] [wifi1] FWLOG: [92454] WAL channel change freq=5680, mode=0 flags=0 rx_ok=1 tx_ok=1
+[   84.670000] [wifi1] FWLOG: [92768] WAL channel change freq=5700, mode=0 flags=0 rx_ok=1 tx_ok=1
+[   84.910000] send_vdev_down_cmd_non_tlv for vap 0 (872da000)
+[   84.910000] OL vap_start +
+[   84.920000] VDEV START
+[   84.920000] OL vap_start -
+[   84.920000] [zte_debug] cur driver channel = 36
+[   84.930000]
+[   84.930000] /home/zte/ci/workspace/Soft4_MF286R_TMOPL_CPE/qsdk/build_dir/linux-ar71xx_generic/zte_genl_kernel-1.0/zte_genl_kernel_main.c[169]: INFO:send msg to user ok, cmd=4, msg=36
+[   84.950000] ol_ath_vap_set_param: Now supported MGMT RATE is 6000(kbps) and rate code: 0x3
+zte_wifi_channel_process: WiFi Channel=[36]
+[   85.130000] ol_vdev_start_resp_ev for vap 0 (872da000)
+[   85.140000] send_wmm_update_cmd_non_tlv:
+[   85.140000] su bfee 1 mu bfee 0 su bfer 1 mu bfer 1 impl bf 0 sounding dim 1
+[   85.150000] send_vdev_up_cmd_non_tlv for vap 0 (872da000)
+[   85.150000]
+[   85.150000] /home/zte/ci/workspace/Soft4_MF286R_TMOPL_CPE/qsdk/build_dir/linux-ar71xx_generic/zte_genl_kernel-1.0/zte_genl_kernel_main.c[169]: INFO:send msg to user ok, cmd=3, msg=401
+zte_wifi_dfs_status_process: dfs=[401]
+[   86.210000] [wifi1] FWLOG: [93087] RESMGR_OCS_GEN_PERIODIC_NOA ( 0x0 )
+[   86.220000] [wifi1] FWLOG: [93087] RESMGR_OCS_GEN_PERIODIC_NOA ( 0x0 )
+[   86.230000] [wifi1] FWLOG: [93093] vap-0 VDEV_MGR_VDEV_START ( 0x143c, 0x2, 0x0, 0x0 )
+[   86.240000] [wifi1] FWLOG: [93093] WAL channel change freq=5180, mode=10 flags=0 rx_ok=1 tx_ok=1
+[   86.240000] [wifi1] FWLOG: [93308] UNKNOWN 14:20 ( 0x0 )
+[   87.210000] [wifi1] FWLOG: [94418] VDEV_MGR_HP_START_TIME ( 0x0, 0x143c, 0xf87000 )
+[   87.220000] [wifi1] FWLOG: [94418] RESMGR_OCS_GEN_PERIODIC_NOA ( 0x1 )
+[   87.230000] [wifi1] FWLOG: [94418] RESMGR_OCS_GEN_PERIODIC_NOA ( 0x0 )
+[   87.240000] [wifi1] FWLOG: [94418] VDEV_MGR_AP_TBTT_CONFIG ( 0x0, 0x143c, 0x0, 0x0 )
